@@ -1,0 +1,464 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "about": "Kuhusu Sisi",
+    "products": "Bidhaa",
+    "claims": "Madai",
+    "resources": "Rasilimali",
+    "support": "Msaada",
+    "whistleblowing": "Ripoti Makosa",
+    "branchLocator": "Mahali pa Matawi",
+    "login": "Ingia",
+    "signUp": "Jisajili"
+  },
+  "home": {
+    "hero": {
+      "badge": "Bima kwa Kila Mtanzania",
+      "badgeSwahili": "Insurance for Every Tanzanian",
+      "title": "Linda Familia Yako kwa TSH 500 Tu Kwa Siku",
+      "description": "Bima ya maisha ya bei nafuu iliyoundwa kwa Watanzania wa kila siku — madereva wa boda boda, mama ntilie, wafanyakazi, na familia. Hakikisha mustakbal wako bila kuvunja benki.",
+      "trustBadge": {
+        "title": "Bei Nafuu. Inayopatikana. Inayoweza.",
+        "description": "Malipo ya kila wiki, usajili rahisi, na ulinzi unaofaa maisha yako. Imejengwa kwa ajili ya wafanyakazi wenye bidii wa Tanzania."
+      },
+      "getStarted": "Pata Ulinzi Leo",
+      "callUs": "Piga Simu Sasa",
+      "stats": {
+        "families": "Familia Zilizolindwa",
+        "claims": "Madai Yaliyo​lipwa",
+        "jobs": "Kazi Zilizounda​wa"
+      },
+      "regulatedBadge": "Imeajiriwa & Kudhibitiwa",
+      "regulatedBy": "Na TIRA Tanzania"
+    },
+    "mission": {
+      "badge": "Dhamira Yetu",
+      "title": "Kwa Nini Moha Ipo: Heshima Kupitia Ulinzi",
+      "intro": "Moha Insurance ilianzishwa na dhamira rahisi lakini yenye nguvu: kufanya bima ifikawe kwa kila Mtanzania, bila kujali mapato au usuli.",
+      "problem": "Familia nyingi za wafanyakazi wenye bidii — madereva wa boda boda, mama ntilie, wamiliki wa biashara ndogo — wanaishi bila ulinzi kwa sababu bima ya jadi ni ghali sana au ngumu. Sisi tuliibadilisha hilo.",
+      "vision": "Mkurugenzi Mkuu wetu alianzisha Moha baada ya kuona jinsi tukio moja lisilotarajiwa linaweza kuharibu fedha za familia. Dira yake: bima ya bei nafuu, rahisi, na ya kuaminika inayoweza kuweka nguvu Watanzania wa kila siku.",
+      "impact": {
+        "title": "Zaidi ya Bima: Kuunda Fursa",
+        "description": "Moha hainalinda familia tu — tunaunda kazi, kuwezesha jamii, na kuwekeza katika mustakbal wa Tanzania. Tunajenga mtandao wa fursa katika kila mkoa."
+      },
+      "values": {
+        "affordability": {
+          "title": "Bei Nafuu",
+          "description": "Kuanzia TSH 500/siku"
+        },
+        "community": {
+          "title": "Jamii Kwanza",
+          "description": "Imejengwa kwa Watanzania"
+        }
+      },
+      "ceoQuote": "Kuweza Kila Mtanzania"
+    },
+    "employment": {
+      "badge": "Jiunge na Timu Yetu",
+      "title": "Fanya Kazi na Moha: Jenga Mustakbal Wako Huku Ukisaidia Wengine",
+      "description": "Sisi si kampuni ya bima tu — sisi ni harakati zinazound​a fursa katika Tanzania yote. Jiunge nasi na uwe sehemu ya kitu kikubwa.",
+      "heslb": {
+        "title": "Mpango wa Kulipa Mkopo wa HESLB",
+        "description": "Jiunge na Moha na tutakusaidia kulipa mikopo yako ya HESLB. Jenga kazi yako huku ukimaliza deni lako — mwanzo mpya kwa waliohitimu.",
+        "benefits": ["Msaada wa kulipa kwa mpango", "Fursa za ukuaji wa kazi", "Mafunzo ya kitaalamu yamejumuishwa"]
+      },
+      "insurance": {
+        "title": "Faida ya Bima ya Wiki 13",
+        "description": "Lipa ada ya mahojiano mara moja na upate ulinzi wa bima ya maisha kwa wiki 13 — ulinzi kuanzia siku ya kwanza, hata ukishindwa kupata kazi.",
+        "benefits": ["Ulinzi unaanza mara moja", "Hakuna kipindi cha kusubiri", "Amani ya akili imehakikishwa"]
+      },
+      "jobs": {
+        "title": "Kazi 500+ Katika Tanzania",
+        "description": "Kutoka Dar es Salaam hadi Mwanza, Arusha hadi Mbeya — Moha inaund​a fursa za ajira katika kila mkoa. Kuwa sehemu ya familia yetu inayokua.",
+        "benefits": ["Fursa za kitaifa", "Mishahara ya ushindani", "Njia za maendeleo ya kazi"]
+      },
+      "cta": "Angalia Nafasi Zilizofunguliwa",
+      "footer": "Jiunge na wafanyakazi 500+ wa Moha wanaoje​nga Tanzania bora"
+    },
+    "products": {
+      "title": "Bima ya Bei Nafuu kwa Kila Mtanzania",
+      "description": "Ulinzi unaolingana na bajeti yako na kulinda kile kinachohitaji zaidi",
+      "life": {
+        "title": "Bima ya Maisha",
+        "description": "Linda familia yako kwa TSH 500 tu kwa siku - bima ya maisha ya bei nafuu iliyoundwa kwa Watanzania wa kila siku",
+        "price": "TSH 500/siku",
+        "coverage": "Hadi TSh milioni 10",
+        "benefitsTitle": "Faida Muhimu",
+        "keyFeatures": {
+          "affordable": {
+            "title": "Bei Nafuu",
+            "description": "TSH 500 tu kwa siku - chini ya soda"
+          },
+          "fast": {
+            "title": "Madai ya Haraka",
+            "description": "98% yanalipwa ndani ya siku 7"
+          },
+          "transparent": {
+            "title": "Hakuna Ada Zilizofi​chwa",
+            "description": "Bei za uwazi kila wakati"
+          },
+          "easy": {
+            "title": "Usajili Rahisi",
+            "description": "Mchakato rahisi wa maombi"
+          }
+        },
+        "viewDetails": "Angalia Maelezo Kamili",
+        "getQuote": "Pata Nukuu"
+      },
+      "learnMore": "Jifunze Zaidi Kuhusu Bima ya Maisha"
+    },
+    "testimonials": {
+      "badge": "Hadithi Halisi",
+      "title": "Imea​miniwa na Watanzania wa Kila Siku",
+      "description": "Sikia kutoka kwa watu wenye bidii tunao​jivunia kuwalinda",
+      "footer": "Jiunge na maelfu ya Watanzania wanaola​la vizuri wakijua familia zao zinalindwa",
+      "cta": "Pata Nukuu Yako Leo"
+    },
+    "whyChoose": {
+      "title": "Kwa Nini Moha Ni Tofauti",
+      "description": "Imejengwa kwa Watanzania, na Watanzania wanaoelewa mahitaji yako",
+      "families": {
+        "title": "Familia 50,000+",
+        "description": "Imea​miniwa na Watanzania wa kila siku katika mikoa yote"
+      },
+      "experience": {
+        "title": "Miaka 14 Imara",
+        "description": "Kutumikia jamii tangu 2010 kwa uadilifu"
+      },
+      "support": {
+        "title": "Msaada wa Saa 24/7",
+        "description": "Daima tuko hapa unapotuhitaji zaidi"
+      },
+      "claims": {
+        "title": "Madai 98% Yaliyo​lipwa",
+        "description": "Malipo ya haraka na ya kuaminika yanapohitajika"
+      }
+    },
+    "partners": {
+      "title": "Imea​miniwa na Mashirika Makuu"
+    },
+    "finalCta": {
+      "badge": "Anza Ulinzi Wako Leo",
+      "title": "Linda Familia Yako kwa TSH 500 Tu Kwa Siku",
+      "description": "Jiunge na familia 50,000+ za Kitanzania zinazola​la vizuri wakijua zinalindwa. Bima ya bei nafuu, rahisi, na ya kuaminika iliyojengwa kwa ajili yako.",
+      "phone": "Piga Simu: +255 123 456 789",
+      "getQuote": "Pata Nukuu Bila Malipo",
+      "features": "✓ Hakuna ada zilizofichwa  ✓ Malipo ya kila wiki  ✓ Uchakataji wa haraka wa madai  ✓ Msaada wa saa 24/7"
+    }
+  },
+  "support": {
+    "hero": {
+      "tag": "Msaada wa Saa 24/7",
+      "title": "Daima Tuko Hapa Kwa Ajili Yako",
+      "subtitle": "Una maswali kuhusu sera yako, unahitaji kuwasilisha dai, au unataka ushauri? Timu yetu rafiki iko tayari kukusaidia."
+    },
+    "stats": {
+      "callAnytime": "Piga Simu Wakati Wowote",
+      "emailSupport": "Msaada kwa Barua Pepe",
+      "branchesCount": "Matawi 4",
+      "fastResponse": "Majibu ya Haraka"
+    },
+    "cards": {
+      "callUs": { "title": "Piga Simu", "subtitle": "Zungumza na timu yetu" },
+      "emailUs": { "title": "Tutumie Barua Pepe", "subtitle": "Tuma ujumbe kwetu" },
+      "hours": { "title": "Saa za Kazi", "weekdays": "Jumatatu - Ijumaa: 8AM - 5PM", "saturday": "Jumamosi: 9AM - 1PM" }
+    },
+    "callback": {
+      "title": "Omba Kupigiwa Simu",
+      "subtitle": "Tutakupigia simu baadaye",
+      "form": {
+        "nameLabel": "Jina Kamili *",
+        "namePlaceholder": "John Doe",
+        "phoneLabel": "Namba ya Simu *",
+        "phonePlaceholder": "+255 123 456 789",
+        "timeLabel": "Muda Unaopendelea",
+        "timePlaceholder": "mf. Kesho saa 8 mchana",
+        "submit": "Omba Upigiwe"
+      },
+      "success": { "title": "Ombi Limepokelewa!", "subtitle": "Tutakupigia simu hivi karibuni" }
+    },
+    "contact": {
+      "title": "Tuma Ujumbe",
+      "subtitle": "Tutajibu ndani ya saa 24",
+      "form": {
+        "nameLabel": "Jina Kamili *",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Barua Pepe *",
+        "emailPlaceholder": "john@example.com",
+        "messageLabel": "Ujumbe *",
+        "messagePlaceholder": "Tunawezaje kukusaidia?",
+        "submit": "Tuma Ujumbe"
+      },
+      "success": { "title": "Ujumbe Umetumwa!", "subtitle": "Tutakujibu hivi karibuni" }
+    },
+    "branches": { "title": "Tembelea Matawi Yetu", "description": "Tafuta ofisi ya Moho Insurance iliyo karibu na wewe" }
+  },
+  "branchLocator": {
+    "hero": { "title": "Tafuta Tawi Karibu Na Wewe", "subtitle": "Tembelea ofisi zetu zilizo karibu kote Tanzania" },
+    "map": { "branches": "Matawi 6 Nchi Nzima", "serving": "Tunahudumia wateja kote Tanzania" },
+    "directions": "Pata Maelekezo",
+    "services": "Huduma",
+    "cta": { "title": "Huwezi Kutembelea Tawi?", "subtitle": "Omba tupige simu na tutakutembelea au kukusaidia kwa mbali", "button": "Omba Upigiwe" }
+  },
+  "common": {
+    "loading": "Inapakia...",
+    "error": "Kuna hitilafu",
+    "tryAgain": "Jaribu Tena",
+    "cancel": "Ghairi",
+    "confirm": "Thibitisha",
+    "save": "Hifadhi",
+    "edit": "Hariri",
+    "delete": "Futa",
+    "view": "Ona",
+    "download": "Pakua",
+    "contact": "Wasiliana Nasi"
+  },
+  "about": {
+    "hero": {
+      "tag": "Hadithi Yetu",
+      "title": "Kuwezesha Kila Mtanzania Kupitia Ulinzi",
+      "subtitle": "Zaidi ya bima — sisi ni harakati zinazound​a fursa, heshima, na usalama kwa familia za kipato cha chini katika Tanzania nzima",
+      "stats": {
+        "families": "Familia Zilizolindwa",
+        "jobs": "Kazi Zilizounda​wa",
+        "years": "Miaka ya Athari"
+      }
+    },
+    "mission": {
+      "tag": "Dhamira Yetu",
+      "title": "Kufanya Bima Ifikawe kwa Wote",
+      "intro": "Moha ilianzishwa kutokana na uchunguzi rahisi: Watanzania wenye bidii — madereva wa boda boda, mama ntilie, wamiliki wa biashara ndogo — walikuwa wakiachiwa nyuma na kampuni za bima za jadi. Ada za juu, taratibu ngumu, na ukosefu wa imani viliwazuia mamilioni wasiwe na ulinzi.",
+      "changed": "Sisi tulibadilisha hilo.",
+      "solution": "Kwa kutoa bima kwa TSH 500 tu kwa siku, usajili rahisi, na uchakataji wa haraka wa madai, tumefanya ulinzi ufikiwe na Watanzania wa kila siku.",
+      "beyondTitle": "Zaidi ya Bima: Kuunda Fursa",
+      "beyondItems": {
+        "jobs": "Kazi 500+ zilizounda​wa katika mikoa yote ya Tanzania",
+        "heslb": "Mpango wa kulipa mikopo ya HESLB unasaidia wahitimu kuanza upya",
+        "insurance": "Faida ya bima ya wiki 13 kwa waombaji wote wa kazi",
+        "community": "Uwekezaji wa jamii katika elimu na miradi ya afya"
+      }
+    },
+    "values": {
+      "title": "Maadili Yetu ya Msingi",
+      "subtitle": "Kanuni zinazotusimu​lia kila kitu tunachofanya",
+      "trust": {
+        "title": "Uaminifu na Uadilifu",
+        "description": "Kujenga uhusiano endelevu kupitia uwazi na uaminifu"
+      },
+      "customer": {
+        "title": "Mteja Kwanza",
+        "description": "Mahitaji yako na kuridhika kwako ni kipaumbele chetu kikubwa"
+      },
+      "excellence": {
+        "title": "Ubora",
+        "description": "Kutoa huduma na bidhaa za ubora wa hali ya juu"
+      },
+      "innovation": {
+        "title": "Ubunifu",
+        "description": "Kuendelea kuboresha ili kukuhudumia vizuri zaidi"
+      }
+    },
+    "journey": {
+      "title": "Safari Yetu",
+      "subtitle": "Miaka 14 ya ukuaji na ubunifu"
+    },
+    "leadership": {
+      "title": "Timu ya Uongozi",
+      "subtitle": "Kut​ana na wataalamu wanaoongoza Moho Insurance"
+    },
+    "partners": {
+      "title": "Washirika Wetu Wanaoaminika"
+    },
+    "whistleblowing": {
+      "title": "Ripoti Makosa",
+      "description": "Ripoti wasiwasi wowote kuhusu tabia zisizo za kimaadili kwa siri na kwa usalama",
+      "button": "Ripoti kwa Siri"
+    },
+    "joinTeam": {
+      "title": "Jiunge na Timu Yetu",
+      "description": "Jenga kazi yako na kampuni inayoongoza ya bima ya Tanzania",
+      "button": "Angalia Nafasi Zilizofunguliwa"
+    }
+  },
+  "products": {
+    "title": "Bidhaa za Bima",
+    "description": "Chaguo za ulinzi zinazofaa mahitaji yako",
+    "learnMore": "Jifunze Zaidi",
+    "getQuote": "Pata Nukuu",
+    "hero": {
+      "tag": "Ulinzi wa Bei Nafuu kwa Kila Mtanzania",
+      "title": "Bidhaa za Bima",
+      "subtitle": "Chaguo za ulinzi kuu zilizoundwa kulinda kile kinachohitaji zaidi kwako"
+    },
+    "life": {
+      "title": "Bima ya Maisha",
+      "description": "Linda familia yako kwa TSH 500 tu kwa siku - bima ya maisha ya bei nafuu iliyoundwa kwa Watanzania wa kila siku",
+      "premium": "TSH 500/siku",
+      "coverage": "Hadi TSh milioni 10",
+      "features": {
+        "coverage": "Ulinzi hadi TSh milioni 10",
+        "affordable": "TSH 500 tu kwa siku",
+        "flexible": "Chaguo za malipo zenye kubadilika",
+        "accidental": "Faida ya kifo cha ajali (malipo maradufu)",
+        "funeral": "Ulinzi wa gharama za mazishi",
+        "education": "Mfuko wa elimu ya watoto",
+        "noMedical": "Hakuna uchunguzi wa kimatibabu kwa ulinzi wa msingi",
+        "fastClaims": "Madai ya haraka ndani ya siku 7"
+      },
+      "learnMore": "Jifunze Zaidi",
+      "getQuote": "Pata Nukuu"
+    },
+    "needHelp": {
+      "title": "Unahitaji Msaada wa Kuchagua?",
+      "description": "Wataalam wetu wa bima wako tayari kukusaidia kupata ulinzi kamili",
+      "button": "Zungumza na Mtaalamu"
+    }
+  },
+  "claims": {
+    "hero": {
+      "tag": "Madai 98% Yalidhibitishwa",
+      "title": "Tuko Hapa Unapotuhitaji Zaidi",
+      "subtitle": "Uchakataji wa haraka na wa kuaminika wa madai ukiwa na malipo ndani ya siku 5-7. Ulinzi wa familia yako ni ahadi yetu.",
+      "newClaim": "Anza Dai Jipya",
+      "hotline": "Piga Simu kwa Hotline ya Madai",
+      "stats": {
+        "processing": "Muda wa Wastani wa Uchakataji",
+        "approved": "Madai Yalidhibitishwa",
+        "support": "Msaada wa Madai"
+      }
+    },
+    "howItWorks": {
+      "title": "Jinsi Madai Yanavyofanya Kazi",
+      "subtitle": "Hatua tatu rahisi za kupata dai lako kuchakatwa haraka",
+      "step1": {
+        "title": "Ripoti Dai Lako",
+        "description": "Tuarifu mara moja kupitia simu, barua pepe, au fomu ya mtandaoni. Toa maelezo ya sera na taarifa za tukio."
+      },
+      "step2": {
+        "title": "Wasilisha Nyaraka",
+        "description": "Pakia nyaraka zinazohitajika pamoja na ripoti ya polisi, picha, rekodi za kimatibabu, au makadirio ya ukarabati."
+      },
+      "step3": {
+        "title": "Tathmini ya Dai na Malipo",
+        "description": "Timu yetu inakagua dai lako ndani ya masaa 48. Mara tu likidhibitishwa, malipo yanachakatwa ndani ya siku 5-7 za kazi."
+      },
+      "button": "Wasilisha Dai Sasa"
+    },
+    "emergency": {
+      "title": "Hotline ya Dharura ya Madai",
+      "description": "Kwa madai ya dharura au dharura, wasiliana nasi mara moja saa 24/7",
+      "hotline": "Hotline ya Saa 24/7",
+      "email": "Tutumie Barua Pepe"
+    },
+    "faq": {
+      "title": "Maswali Yanayoulizwa Mara kwa Mara",
+      "subtitle": "Kila kitu unahitaji kujua kuhusu kuwasilisha dai",
+      "q1": {
+        "question": "Dai langu litachakatwa kwa haraka kiasi gani?",
+        "answer": "Tunachakat​a madai mengi ndani ya masaa 48-72 baada ya kupokea nyaraka kamili. Madai rahisi yanaweza kuidhinishwa ndani ya masaa 24 tu. Madai magumu yanaweza kuchukua hadi siku 7-10 za kazi."
+      },
+      "q2": {
+        "question": "Ni nyaraka gani ninazohitaji kuwasilisha?",
+        "answer": "Nyaraka zinazohitajika zinatofautiana kulingana na aina ya dai lakini kwa kawaida ni pamoja na: hati ya sera, fomu ya dai, ripoti ya polisi (kwa wizi/ajali), rekodi za kimatibabu (kwa madai ya afya), makadirio ya ukarabati, na picha za uharibifu. Timu yetu itakuongoza kupitia mahitaji maalum."
+      },
+      "q3": {
+        "question": "Je, ninaweza kufuatilia hali ya dai langu?",
+        "answer": "Ndiyo! Unaweza kufuatilia hali ya dai lako mtandaoni kupitia lango lako la mteja au kwa kupiga simu kwa hotline yetu ya madai. Pia tunatuma SMS na barua pepe za masasisho katika kila hatua ya mchakato wa madai."
+      }
+    }
+  },
+  "resources": {
+    "hero": {
+      "tag": "Rasilimali na Fursa",
+      "title": "Endelea Kufahamu, Pata Nguvu",
+      "subtitle": "Habari za hivi karibuni, nyaraka za msaada, na fursa za kazi za kusisimua za kujenga mustakbal wako na Moha",
+      "tabs": {
+        "news": "Habari za Hivi Karibuni",
+        "documents": "Nyaraka",
+        "careers": "Kazi"
+      }
+    },
+    "news": {
+      "noArticles": "Hakuna makala ya habari zinazopatikana"
+    },
+    "documents": {
+      "title": "Nyaraka za Sera na Fomu",
+      "noDocuments": "Hakuna nyaraka zinazopatikana"
+    },
+    "careers": {
+      "title": "Jiunge na Timu Yetu",
+      "subtitle": "Jenga kazi yako na kampuni inayoongoza ya bima ya Tanzania",
+      "applyNow": "Omba Sasa",
+      "application": {
+        "title": "Omba kwa",
+        "fullName": "Jina Kamili *",
+        "email": "Barua Pepe *",
+        "phone": "Namba ya Simu *",
+        "availableFrom": "Inapatikana Kuanzia",
+        "experience": "Miaka ya Uzoefu *",
+        "education": "Elimu ya Juu Zaidi *",
+        "currentCompany": "Kampuni ya Sasa",
+        "expectedSalary": "Mshahara Unaotarajiwa",
+        "skills": "Ujuzi (tenganishwa na koma)",
+        "coverLetter": "Barua ya Kifuniko *",
+        "references": "Marejeo (Si Lazima)",
+        "uploadCV": "Pakia CV/Resume (Si Lazima)",
+        "submit": "Wasilisha Ombi",
+        "submitting": "Inatuma...",
+        "success": {
+          "title": "Ombi Limewasilishwa!",
+          "message": "Tutakagua ombi lako na tutakujibu hivi karibuni"
+        }
+      }
+    }
+  },
+  "whistleblowing": {
+    "hero": {
+      "tag": "Salama na Siri",
+      "title": "Sema kwa Usalama",
+      "subtitle": "Sauti yako inahitaji. Ripoti udanganyifu, tabia mbaya, au wasiwasi kwa siri. Tunalinda wapiga kengele na kuchukua hatua."
+    },
+    "features": {
+      "confidential": {
+        "title": "Siri",
+        "description": "Utambulisho wako unalindwa"
+      },
+      "secure": {
+        "title": "Salama",
+        "description": "Uwasilishaji uliosimbwa"
+      },
+      "anonymous": {
+        "title": "Bila Jina",
+        "description": "Chaguo linapatikana"
+      }
+    },
+    "form": {
+      "title": "Wasilisha Ripoti Yako",
+      "intro": "Moho Insurance imejitolea kudumisha viwango vya juu vya maadili na uadilifu. Ikiwa umeshuhudia au unashuku makosa yoyote, udanganyifu, au tabia zisizo za kimaadili, tafadhali ripoti hapa. Ripoti zote zinashughulikiwa kwa uzito na kuchunguzwa kikamilifu.",
+      "anonymous": "Wasilisha ripoti hii bila jina (taarifa za mawasiliano za hiari hazitakusanywa)",
+      "reportType": "Aina ya Ripoti *",
+      "priority": "Kiwango cha Kipaumbele *",
+      "contactInfo": "Kutoa taarifa zako za mawasiliano kunasaidia tufuatilie ikiwa itahitajika. Utambulisho wako utabaki kuwa siri.",
+      "fullName": "Jina Kamili (Si Lazima)",
+      "email": "Barua Pepe (Si Lazima)",
+      "phone": "Namba ya Simu (Si Lazima)",
+      "description": "Maelezo ya Tukio *",
+      "location": "Mahali pa Tukio (Si Lazima)",
+      "witnesses": "Maelezo ya Mashahidi (Si Lazima)",
+      "documents": "Nyaraka za Kuunga Mkono (Si Lazima)",
+      "uploadPrompt": "Bofya ili kupakia nyaraka",
+      "uploadInfo": "PDF, JPG, PNG, DOC, DOCX (Upeo wa 5MB)",
+      "submit": "Wasilisha Ripoti kwa Usalama",
+      "submitting": "Inatuma kwa Usalama...",
+      "success": {
+        "title": "Asante kwa Ujasiri Wako",
+        "message": "Ripoti yako imewasilishwa kwa usalama na",
+        "anonymous": "bila jina",
+        "confidential": "kwa siri",
+        "assurance": "Tunazingatia ripoti zote kwa uzito na tutachunguza kikamilifu huku tukilinda utambulisho wako.",
+        "returnHome": "Rudi Nyumbani",
+        "backToAbout": "Rudi kwa Kuhusu Sisi"
+      }
+    }
+  }
+}

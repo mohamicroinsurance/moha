@@ -1,0 +1,494 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "claims": "Claims",
+    "resources": "Resources",
+    "support": "Support",
+    "whistleblowing": "Whistleblowing",
+    "branchLocator": "Branch Locator",
+    "login": "Login",
+    "signUp": "Sign Up"
+  },
+  "home": {
+    "hero": {
+      "badge": "Insurance for Every Tanzanian",
+      "badgeSwahili": "Bima kwa Kila Mtanzania",
+      "title": "Protect Your Family for Just 500 TSH Per Day",
+      "description": "Affordable life insurance built for everyday Tanzanians — boda boda riders, mama ntilie, workers, and families. Secure your future without breaking the bank.",
+      "trustBadge": {
+        "title": "Affordable. Accessible. Empowering.",
+        "description": "Weekly payments, easy enrollment, and coverage that fits your life. Built for the hardworking people of Tanzania."
+      },
+      "getStarted": "Get Covered Today",
+      "callUs": "Call Us Now",
+      "stats": {
+        "families": "Families Protected",
+        "claims": "Claims Paid",
+        "jobs": "Jobs Created"
+      },
+      "regulatedBadge": "Licensed & Regulated",
+      "regulatedBy": "By TIRA Tanzania"
+    },
+    "mission": {
+      "badge": "Our Mission",
+      "title": "Why Moha Exists: Dignity Through Protection",
+      "intro": "Moha Insurance was founded with a simple but powerful mission: make insurance accessible to every Tanzanian, regardless of income or background.",
+      "problem": "Too many hardworking families — boda boda riders, mama ntilie, small business owners — go without protection because traditional insurance is too expensive or complicated. We changed that.",
+      "vision": "Our CEO started Moha after witnessing how a single unexpected event could devastate a family's finances. His vision: affordable, simple, and trustworthy insurance that empowers everyday Tanzanians.",
+      "impact": {
+        "title": "Beyond Insurance: Creating Opportunity",
+        "description": "Moha doesn't just protect families — we create jobs, empower communities, and invest in Tanzania's future. We're building a network of opportunity across every region."
+      },
+      "values": {
+        "affordability": {
+          "title": "Affordability",
+          "description": "Starting at 500 TSH/day"
+        },
+        "community": {
+          "title": "Community First",
+          "description": "Built for Tanzanians"
+        }
+      },
+      "ceoQuote": "Empowering Every Tanzanian"
+    },
+    "employment": {
+      "badge": "Join Our Team",
+      "title": "Work with Moha: Build Your Future While Helping Others",
+      "description": "We're not just an insurance company — we're a movement creating opportunities across Tanzania. Join us and be part of something bigger.",
+      "heslb": {
+        "title": "HESLB Loan Repayment Program",
+        "description": "Join Moha and we'll help you pay off your HESLB student loans. Build your career while clearing your debt — a fresh start for graduates.",
+        "benefits": ["Structured repayment support", "Career growth opportunities", "Professional training included"]
+      },
+      "insurance": {
+        "title": "13-Week Insurance Benefit",
+        "description": "Pay a one-time interview fee and receive 13 weeks of life insurance coverage — protection from day one, whether you get the job or not.",
+        "benefits": ["Immediate coverage starts", "No waiting period", "Peace of mind guaranteed"]
+      },
+      "jobs": {
+        "title": "500+ Jobs Across Tanzania",
+        "description": "From Dar es Salaam to Mwanza, Arusha to Mbeya — Moha is creating employment opportunities in every region. Be part of our growing family.",
+        "benefits": ["Nationwide opportunities", "Competitive salaries", "Career advancement paths"]
+      },
+      "cta": "View Open Positions",
+      "footer": "Join 500+ Moha employees building a better Tanzania"
+    },
+    "products": {
+      "title": "Affordable Insurance for Every Tanzanian",
+      "description": "Coverage that fits your budget and protects what matters most",
+      "life": {
+        "title": "Life Insurance",
+        "description": "Protect your family for just 500 TSH per day - affordable life insurance designed for everyday Tanzanians",
+        "price": "500 TSH/day",
+        "coverage": "Up to TSh 10 million",
+        "benefitsTitle": "Key Benefits",
+        "keyFeatures": {
+          "affordable": {
+            "title": "Affordable",
+            "description": "Just 500 TSH per day - less than a soda"
+          },
+          "fast": {
+            "title": "Fast Claims",
+            "description": "98% paid within 7 days"
+          },
+          "transparent": {
+            "title": "No Hidden Fees",
+            "description": "Transparent pricing always"
+          },
+          "easy": {
+            "title": "Easy Enrollment",
+            "description": "Simple application process"
+          }
+        },
+        "viewDetails": "View Full Details",
+        "getQuote": "Get Quote"
+      },
+      "learnMore": "Learn More About Life Insurance"
+    },
+    "testimonials": {
+      "badge": "Real Stories",
+      "title": "Trusted by Everyday Tanzanians",
+      "description": "Hear from the hardworking people we're proud to protect",
+      "footer": "Join thousands of Tanzanians who sleep better knowing their families are protected",
+      "cta": "Get Your Quote Today"
+    },
+    "whyChoose": {
+      "title": "Why Moha Is Different",
+      "description": "Built for Tanzanians, by Tanzanians who understand your needs",
+      "families": {
+        "title": "50,000+ Families",
+        "description": "Trusted by everyday Tanzanians across all regions"
+      },
+      "experience": {
+        "title": "14 Years Strong",
+        "description": "Serving communities since 2010 with integrity"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Always here when you need us most"
+      },
+      "claims": {
+        "title": "98% Claims Paid",
+        "description": "Fast, reliable payouts when it matters"
+      }
+    },
+    "partners": {
+      "title": "Trusted by Leading Organizations"
+    },
+    "finalCta": {
+      "badge": "Start Your Protection Today",
+      "title": "Protect Your Family for Just 500 TSH Per Day",
+      "description": "Join 50,000+ Tanzanian families who sleep better knowing they're protected. Affordable, simple, and trustworthy insurance built for you.",
+      "phone": "Call: +255 123 456 789",
+      "getQuote": "Get Free Quote",
+      "features": "✓ No hidden fees  ✓ Weekly payments  ✓ Fast claims processing  ✓ 24/7 support"
+    }
+  },
+  "about": {
+    "title": "About Moha Micro Insurance",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide accessible, affordable, and reliable insurance solutions that empower individuals and small businesses to thrive with confidence."
+    },
+    "story": {
+      "title": "Our Story",
+      "description": "Founded with the vision of making insurance accessible to all Kenyans, Moha Micro Insurance has been serving communities across the country with dedication and integrity."
+    },
+    "values": {
+      "title": "Our Values",
+      "integrity": "Integrity",
+      "accessibility": "Accessibility",
+      "excellence": "Excellence",
+      "community": "Community"
+    }
+  },
+  "products": {
+    "title": "Insurance Products",
+    "description": "Comprehensive coverage options tailored to your needs",
+    "learnMore": "Learn More",
+    "getQuote": "Get Quote"
+  },
+  "claims": {
+    "title": "File a Claim",
+    "description": "Submit your insurance claim quickly and easily",
+    "newClaim": "New Claim",
+    "trackClaim": "Track Existing Claim",
+    "requirements": "Claim Requirements",
+    "process": "Claims Process",
+    "support": "Need Help?",
+    "contactSupport": "Contact Support"
+  },
+  "support": {
+    "hero": {
+      "tag": "24/7 Support Available",
+      "title": "We're Always Here for You",
+      "subtitle": "Have questions about your policy, need to make a claim, or just want advice? Our friendly team is ready to help."
+    },
+    "stats": {
+      "callAnytime": "Call Anytime",
+      "emailSupport": "Email Support",
+      "branchesCount": "4 Branches",
+      "fastResponse": "Fast Response"
+    },
+    "cards": {
+      "callUs": { "title": "Call Us", "subtitle": "Speak with our team" },
+      "emailUs": { "title": "Email Us", "subtitle": "Send us a message" },
+      "hours": { "title": "Business Hours", "weekdays": "Mon - Fri: 8AM - 5PM", "saturday": "Sat: 9AM - 1PM" }
+    },
+    "callback": {
+      "title": "Request a Call",
+      "subtitle": "We'll call you back",
+      "form": {
+        "nameLabel": "Full Name *",
+        "namePlaceholder": "John Doe",
+        "phoneLabel": "Phone Number *",
+        "phonePlaceholder": "+255 123 456 789",
+        "timeLabel": "Preferred Call Time",
+        "timePlaceholder": "e.g., Tomorrow 2PM",
+        "submit": "Request Callback"
+      },
+      "success": { "title": "Request Received!", "subtitle": "We'll call you back soon" }
+    },
+    "contact": {
+      "title": "Send a Message",
+      "subtitle": "We'll respond within 24 hours",
+      "form": {
+        "nameLabel": "Full Name *",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Email Address *",
+        "emailPlaceholder": "john@example.com",
+        "messageLabel": "Message *",
+        "messagePlaceholder": "How can we help you?",
+        "submit": "Send Message"
+      },
+      "success": { "title": "Message Sent!", "subtitle": "We'll get back to you soon" }
+    },
+    "branches": { "title": "Visit Our Branches", "description": "Find a Moho Insurance office near you" }
+  },
+  "branchLocator": {
+    "hero": { "title": "Find a Branch Near You", "subtitle": "Visit any of our conveniently located offices across Tanzania" },
+    "map": { "branches": "6 Branches Nationwide", "serving": "Serving customers across Tanzania" },
+    "directions": "Get Directions",
+    "services": "Services",
+    "cta": { "title": "Can't Visit a Branch?", "subtitle": "Request a callback and we'll come to you or assist you remotely", "button": "Request a Call" }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "tryAgain": "Try Again",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "download": "Download",
+    "contact": "Contact Us"
+  },
+  "about": {
+    "hero": {
+      "tag": "Our Story",
+      "title": "Empowering Every Tanzanian Through Protection",
+      "subtitle": "More than insurance — we're a movement creating opportunity, dignity, and security for low-income families across Tanzania",
+      "stats": {
+        "families": "Families Protected",
+        "jobs": "Jobs Created",
+        "years": "Years of Impact"
+      }
+    },
+    "mission": {
+      "tag": "Our Mission",
+      "title": "Making Insurance Accessible to All",
+      "intro": "Moha was born from a simple observation: hardworking Tanzanians — boda boda riders, mama ntilie, small business owners — were being left behind by traditional insurance companies. High premiums, complex processes, and lack of trust kept millions unprotected.",
+      "changed": "We changed that.",
+      "solution": "By offering insurance for just 500 TSH per day, simple enrollment, and fast claims processing, we've made protection accessible to everyday Tanzanians.",
+      "beyondTitle": "Beyond Insurance: Creating Opportunity",
+      "beyondItems": {
+        "jobs": "500+ jobs created across all regions of Tanzania",
+        "heslb": "HESLB loan repayment program helping graduates start fresh",
+        "insurance": "13-week insurance benefit for all job applicants",
+        "community": "Community investment in education and health initiatives"
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "The principles that guide everything we do",
+      "trust": {
+        "title": "Trust & Integrity",
+        "description": "Building lasting relationships through transparency and honesty"
+      },
+      "customer": {
+        "title": "Customer First",
+        "description": "Your needs and satisfaction are our top priority"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Delivering the highest quality service and products"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Continuously improving to serve you better"
+      }
+    },
+    "journey": {
+      "title": "Our Journey",
+      "subtitle": "14 years of growth and innovation"
+    },
+    "leadership": {
+      "title": "Leadership Team",
+      "subtitle": "Meet the experts guiding Moho Insurance"
+    },
+    "partners": {
+      "title": "Our Trusted Partners"
+    },
+    "whistleblowing": {
+      "title": "Whistleblowing",
+      "description": "Report any concerns about unethical behavior confidentially and securely",
+      "button": "Report Confidentially"
+    },
+    "joinTeam": {
+      "title": "Join Our Team",
+      "description": "Build your career with Tanzania's leading insurance provider",
+      "button": "View Open Positions"
+    }
+  },
+  "products": {
+    "hero": {
+      "tag": "Affordable Coverage for Every Tanzanian",
+      "title": "Insurance Products",
+      "subtitle": "Comprehensive coverage options designed to protect what matters most to you"
+    },
+    "life": {
+      "title": "Life Insurance",
+      "description": "Protect your family for just 500 TSH per day - affordable life insurance designed for everyday Tanzanians",
+      "premium": "500 TSH/day",
+      "coverage": "Up to TSh 10M",
+      "features": {
+        "coverage": "Coverage up to TSh 10 million",
+        "affordable": "Only 500 TSH per day",
+        "flexible": "Flexible payment options",
+        "accidental": "Accidental death benefit (double payout)",
+        "funeral": "Funeral expense coverage",
+        "education": "Children's education fund",
+        "noMedical": "No medical exam for basic coverage",
+        "fastClaims": "Fast claims within 7 days"
+      },
+      "learnMore": "Learn More",
+      "getQuote": "Get Quote"
+    },
+    "needHelp": {
+      "title": "Need Help Choosing?",
+      "description": "Our insurance experts are ready to help you find the perfect coverage",
+      "button": "Speak with an Expert"
+    }
+  },
+  "claims": {
+    "hero": {
+      "tag": "98% Claims Approved",
+      "title": "We're Here When You Need Us Most",
+      "subtitle": "Fast, reliable claims processing with payments within 5-7 days. Your family's protection is our promise.",
+      "newClaim": "Start a New Claim",
+      "hotline": "Call Claims Hotline",
+      "stats": {
+        "processing": "Average Processing Time",
+        "approved": "Claims Approved",
+        "support": "Claims Support"
+      }
+    },
+    "howItWorks": {
+      "title": "How Claims Work",
+      "subtitle": "Three simple steps to get your claim processed quickly",
+      "step1": {
+        "title": "Report Your Claim",
+        "description": "Notify us immediately via phone, email, or online form. Provide policy details and incident information."
+      },
+      "step2": {
+        "title": "Submit Documents",
+        "description": "Upload required documents including police report, photos, medical records, or repair estimates."
+      },
+      "step3": {
+        "title": "Claim Assessment & Payment",
+        "description": "Our team reviews your claim within 48 hours. Once approved, payment is processed within 5-7 business days."
+      },
+      "button": "File a Claim Now"
+    },
+    "emergency": {
+      "title": "Emergency Claims Hotline",
+      "description": "For urgent claims or emergencies, contact us immediately 24/7",
+      "hotline": "24/7 Hotline",
+      "email": "Email Us"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about filing a claim",
+      "q1": {
+        "question": "How quickly will my claim be processed?",
+        "answer": "We process most claims within 48-72 hours of receiving complete documentation. Simple claims can be approved in as little as 24 hours. Complex claims may take up to 7-10 business days."
+      },
+      "q2": {
+        "question": "What documents do I need to submit?",
+        "answer": "Required documents vary by claim type but typically include: policy certificate, claim form, police report (for theft/accident), medical records (for health claims), repair estimates, and photos of damage. Our team will guide you through specific requirements."
+      },
+      "q3": {
+        "question": "Can I track my claim status?",
+        "answer": "Yes! You can track your claim status online through your customer portal or by calling our claims hotline. We also send SMS and email updates at each stage of the claims process."
+      }
+    }
+  },
+  "resources": {
+    "hero": {
+      "tag": "Resources & Opportunities",
+      "title": "Stay Informed, Get Empowered",
+      "subtitle": "Latest news, helpful documents, and exciting career opportunities to build your future with Moha",
+      "tabs": {
+        "news": "Latest News",
+        "documents": "Documents",
+        "careers": "Careers"
+      }
+    },
+    "news": {
+      "noArticles": "No news articles available"
+    },
+    "documents": {
+      "title": "Policy Documents & Forms",
+      "noDocuments": "No documents available"
+    },
+    "careers": {
+      "title": "Join Our Team",
+      "subtitle": "Build your career with Tanzania's leading insurance provider",
+      "applyNow": "Apply Now",
+      "application": {
+        "title": "Apply for",
+        "fullName": "Full Name *",
+        "email": "Email Address *",
+        "phone": "Phone Number *",
+        "availableFrom": "Available From",
+        "experience": "Years of Experience *",
+        "education": "Highest Education *",
+        "currentCompany": "Current Company",
+        "expectedSalary": "Expected Salary",
+        "skills": "Skills (comma-separated)",
+        "coverLetter": "Cover Letter *",
+        "references": "References (Optional)",
+        "uploadCV": "Upload CV/Resume (Optional)",
+        "submit": "Submit Application",
+        "submitting": "Submitting...",
+        "success": {
+          "title": "Application Submitted!",
+          "message": "We'll review your application and get back to you soon"
+        }
+      }
+    }
+  },
+  "whistleblowing": {
+    "hero": {
+      "tag": "Secure & Confidential",
+      "title": "Speak Up Safely",
+      "subtitle": "Your voice matters. Report fraud, misconduct, or concerns confidentially. We protect whistleblowers and take action."
+    },
+    "features": {
+      "confidential": {
+        "title": "Confidential",
+        "description": "Your identity is protected"
+      },
+      "secure": {
+        "title": "Secure",
+        "description": "Encrypted submission"
+      },
+      "anonymous": {
+        "title": "Anonymous",
+        "description": "Option available"
+      }
+    },
+    "form": {
+      "title": "Submit Your Report",
+      "intro": "Moho Insurance is committed to maintaining the highest standards of ethics and integrity. If you have witnessed or suspect any wrongdoing, fraud, or unethical behavior, please report it here. All reports are treated seriously and investigated thoroughly.",
+      "anonymous": "Submit this report anonymously (optional contact information will not be collected)",
+      "reportType": "Report Type *",
+      "priority": "Priority Level *",
+      "contactInfo": "Providing your contact information helps us follow up if needed. Your identity will remain confidential.",
+      "fullName": "Full Name (Optional)",
+      "email": "Email Address (Optional)",
+      "phone": "Phone Number (Optional)",
+      "description": "Incident Description *",
+      "location": "Incident Location (Optional)",
+      "witnesses": "Witness Details (Optional)",
+      "documents": "Supporting Documents (Optional)",
+      "uploadPrompt": "Click to upload documents",
+      "uploadInfo": "PDF, JPG, PNG, DOC, DOCX (Max 5MB)",
+      "submit": "Submit Report Securely",
+      "submitting": "Submitting Securely...",
+      "success": {
+        "title": "Thank You for Your Courage",
+        "message": "Your report has been submitted securely and",
+        "anonymous": "anonymously",
+        "confidential": "confidentially",
+        "assurance": "We take all reports seriously and will investigate thoroughly while protecting your identity.",
+        "returnHome": "Return to Home",
+        "backToAbout": "Back to About Us"
+      }
+    }
+  }
+}
