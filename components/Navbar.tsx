@@ -166,8 +166,12 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="lg:hidden">
+            {/* Mobile Menu Button with Language Toggle */}
+            <div className="lg:hidden flex items-center gap-2">
+              {/* Language Toggle for Mobile - Always visible */}
+              <div className="md:hidden">
+                <LanguageToggle />
+              </div>
               <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon" aria-label="Open menu">
@@ -193,6 +197,8 @@ export default function Navbar() {
                           <span className="text-xs font-semibold text-orange-600 leading-tight">Micro-Insurance</span>
                         </div>
                       </div>
+                      {/* Language Toggle inside mobile menu */}
+                      <LanguageToggle />
                     </div>
                     
                     {/* Navigation */}
@@ -269,9 +275,14 @@ export default function Navbar() {
                     {/* Footer Actions */}
                     <div className="px-6 py-4 space-y-3 border-t bg-gray-50">
                       <Link href={`/${locale}/support`} onClick={() => setMobileMenuOpen(false)}>
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                        <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+                          {t('products.getQuote')}
+                        </Button>
+                      </Link>
+                      <Link href={`/${locale}/support`} onClick={() => setMobileMenuOpen(false)}>
+                        <Button variant="outline" className="w-full border-blue-600 text-blue-600 hover:bg-blue-50">
                           <Phone className="w-4 h-4 mr-2" />
-                          Request Call
+                          {t('common.contact')}
                         </Button>
                       </Link>
                     </div>
