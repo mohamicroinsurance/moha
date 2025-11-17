@@ -101,9 +101,9 @@ export default function About() {
                 <p className="text-lg font-semibold mb-2">"Insurance shouldn't be a luxury"</p>
                 <p className="text-sm text-orange-100">
                   "Every Tanzanian deserves the dignity of protection. That's why we created 
-                  Moha — affordable insurance for the people, by the people."
+                  Moha  affordable insurance for the people, by the people."
                 </p>
-                <p className="text-sm mt-3 font-medium">— [CEO Name], Founder & CEO</p>
+                <p className="text-sm mt-3 font-medium"> [CEO Name], Founder & CEO</p>
               </div>
             </motion.div>
             <div className="space-y-6">

@@ -156,7 +156,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center space-x-3">
               <Link href={`/${locale}/support`}>
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg hover:shadow-xl transition-all">
-                  {t('products.getQuote')}
+                  {t('nav.getQuote')}
                 </Button>
               </Link>
               <Link href={`/${locale}/claims`}>
@@ -275,8 +275,8 @@ export default function Navbar() {
                     {/* Footer Actions */}
                     <div className="px-6 py-4 space-y-3 border-t bg-gray-50">
                       <Link href={`/${locale}/support`} onClick={() => setMobileMenuOpen(false)}>
-                        <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
-                          {t('products.getQuote')}
+                        <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white mb-2">
+                          {t('nav.getQuote')}
                         </Button>
                       </Link>
                       <Link href={`/${locale}/support`} onClick={() => setMobileMenuOpen(false)}>

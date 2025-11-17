@@ -9,14 +9,15 @@
     "whistleblowing": "Ripoti Makosa",
     "branchLocator": "Mahali pa Matawi",
     "login": "Ingia",
-    "signUp": "Jisajili"
+    "signUp": "Jisajili",
+    "getQuote": "Pata Nukuu"
   },
   "home": {
     "hero": {
       "badge": "Bima kwa Kila Mtanzania",
       "badgeSwahili": "Insurance for Every Tanzanian",
       "title": "Linda Familia Yako kwa TSH 500 Tu Kwa Siku",
-      "description": "Bima ya maisha ya bei nafuu iliyoundwa kwa Watanzania wa kila siku — madereva wa boda boda, mama ntilie, wafanyakazi, na familia. Hakikisha mustakbal wako bila kuvunja benki.",
+      "description": "Bima ya maisha ya bei nafuu iliyoundwa kwa Watanzania wa kila siku  madereva wa boda boda, mama ntilie, wafanyakazi, na familia. Hakikisha mustakbal wako bila kuvunja benki.",
       "trustBadge": {
         "title": "Bei Nafuu. Inayopatikana. Inayoweza.",
         "description": "Malipo ya kila wiki, usajili rahisi, na ulinzi unaofaa maisha yako. Imejengwa kwa ajili ya wafanyakazi wenye bidii wa Tanzania."
@@ -35,11 +36,11 @@
       "badge": "Dhamira Yetu",
       "title": "Kwa Nini Moha Ipo: Heshima Kupitia Ulinzi",
       "intro": "Moha Insurance ilianzishwa na dhamira rahisi lakini yenye nguvu: kufanya bima ifikawe kwa kila Mtanzania, bila kujali mapato au usuli.",
-      "problem": "Familia nyingi za wafanyakazi wenye bidii — madereva wa boda boda, mama ntilie, wamiliki wa biashara ndogo — wanaishi bila ulinzi kwa sababu bima ya jadi ni ghali sana au ngumu. Sisi tuliibadilisha hilo.",
+      "problem": "Familia nyingi za wafanyakazi wenye bidii  madereva wa boda boda, mama ntilie, wamiliki wa biashara ndogo  wanaishi bila ulinzi kwa sababu bima ya jadi ni ghali sana au ngumu. Sisi tuliibadilisha hilo.",
       "vision": "Mkurugenzi Mkuu wetu alianzisha Moha baada ya kuona jinsi tukio moja lisilotarajiwa linaweza kuharibu fedha za familia. Dira yake: bima ya bei nafuu, rahisi, na ya kuaminika inayoweza kuweka nguvu Watanzania wa kila siku.",
       "impact": {
         "title": "Zaidi ya Bima: Kuunda Fursa",
-        "description": "Moha hainalinda familia tu — tunaunda kazi, kuwezesha jamii, na kuwekeza katika mustakbal wa Tanzania. Tunajenga mtandao wa fursa katika kila mkoa."
+        "description": "Moha hainalinda familia tu  tunaunda kazi, kuwezesha jamii, na kuwekeza katika mustakbal wa Tanzania. Tunajenga mtandao wa fursa katika kila mkoa."
       },
       "values": {
         "affordability": {
@@ -56,20 +57,20 @@
     "employment": {
       "badge": "Jiunge na Timu Yetu",
       "title": "Fanya Kazi na Moha: Jenga Mustakbal Wako Huku Ukisaidia Wengine",
-      "description": "Sisi si kampuni ya bima tu — sisi ni harakati zinazound​a fursa katika Tanzania yote. Jiunge nasi na uwe sehemu ya kitu kikubwa.",
+      "description": "Sisi si kampuni ya bima tu  sisi ni harakati zinazound​a fursa katika Tanzania yote. Jiunge nasi na uwe sehemu ya kitu kikubwa.",
       "heslb": {
         "title": "Mpango wa Kulipa Mkopo wa HESLB",
-        "description": "Jiunge na Moha na tutakusaidia kulipa mikopo yako ya HESLB. Jenga kazi yako huku ukimaliza deni lako — mwanzo mpya kwa waliohitimu.",
+        "description": "Jiunge na Moha na tutakusaidia kulipa mikopo yako ya HESLB. Jenga kazi yako huku ukimaliza deni lako  mwanzo mpya kwa waliohitimu.",
         "benefits": ["Msaada wa kulipa kwa mpango", "Fursa za ukuaji wa kazi", "Mafunzo ya kitaalamu yamejumuishwa"]
       },
       "insurance": {
         "title": "Faida ya Bima ya Wiki 13",
-        "description": "Lipa ada ya mahojiano mara moja na upate ulinzi wa bima ya maisha kwa wiki 13 — ulinzi kuanzia siku ya kwanza, hata ukishindwa kupata kazi.",
+        "description": "Lipa ada ya mahojiano mara moja na upate ulinzi wa bima ya maisha kwa wiki 13  ulinzi kuanzia siku ya kwanza, hata ukishindwa kupata kazi.",
         "benefits": ["Ulinzi unaanza mara moja", "Hakuna kipindi cha kusubiri", "Amani ya akili imehakikishwa"]
       },
       "jobs": {
         "title": "Kazi 500+ Katika Tanzania",
-        "description": "Kutoka Dar es Salaam hadi Mwanza, Arusha hadi Mbeya — Moha inaund​a fursa za ajira katika kila mkoa. Kuwa sehemu ya familia yetu inayokua.",
+        "description": "Kutoka Dar es Salaam hadi Mwanza, Arusha hadi Mbeya  Moha inaund​a fursa za ajira katika kila mkoa. Kuwa sehemu ya familia yetu inayokua.",
         "benefits": ["Fursa za kitaifa", "Mishahara ya ushindani", "Njia za maendeleo ya kazi"]
       },
       "cta": "Angalia Nafasi Zilizofunguliwa",
@@ -217,7 +218,7 @@
     "hero": {
       "tag": "Hadithi Yetu",
       "title": "Kuwezesha Kila Mtanzania Kupitia Ulinzi",
-      "subtitle": "Zaidi ya bima — sisi ni harakati zinazound​a fursa, heshima, na usalama kwa familia za kipato cha chini katika Tanzania nzima",
+      "subtitle": "Zaidi ya bima  sisi ni harakati zinazound​a fursa, heshima, na usalama kwa familia za kipato cha chini katika Tanzania nzima",
       "stats": {
         "families": "Familia Zilizolindwa",
         "jobs": "Kazi Zilizounda​wa",
@@ -227,7 +228,7 @@
     "mission": {
       "tag": "Dhamira Yetu",
       "title": "Kufanya Bima Ifikawe kwa Wote",
-      "intro": "Moha ilianzishwa kutokana na uchunguzi rahisi: Watanzania wenye bidii — madereva wa boda boda, mama ntilie, wamiliki wa biashara ndogo — walikuwa wakiachiwa nyuma na kampuni za bima za jadi. Ada za juu, taratibu ngumu, na ukosefu wa imani viliwazuia mamilioni wasiwe na ulinzi.",
+      "intro": "Moha ilianzishwa kutokana na uchunguzi rahisi: Watanzania wenye bidii  madereva wa boda boda, mama ntilie, wamiliki wa biashara ndogo  walikuwa wakiachiwa nyuma na kampuni za bima za jadi. Ada za juu, taratibu ngumu, na ukosefu wa imani viliwazuia mamilioni wasiwe na ulinzi.",
       "changed": "Sisi tulibadilisha hilo.",
       "solution": "Kwa kutoa bima kwa TSH 500 tu kwa siku, usajili rahisi, na uchakataji wa haraka wa madai, tumefanya ulinzi ufikiwe na Watanzania wa kila siku.",
       "beyondTitle": "Zaidi ya Bima: Kuunda Fursa",

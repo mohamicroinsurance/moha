@@ -9,14 +9,15 @@
     "whistleblowing": "Whistleblowing",
     "branchLocator": "Branch Locator",
     "login": "Login",
-    "signUp": "Sign Up"
+    "signUp": "Sign Up",
+    "getQuote": "Get Quote"
   },
   "home": {
     "hero": {
       "badge": "Insurance for Every Tanzanian",
       "badgeSwahili": "Bima kwa Kila Mtanzania",
       "title": "Protect Your Family for Just 500 TSH Per Day",
-      "description": "Affordable life insurance built for everyday Tanzanians — boda boda riders, mama ntilie, workers, and families. Secure your future without breaking the bank.",
+      "description": "Affordable life insurance built for everyday Tanzanians  boda boda riders, mama ntilie, workers, and families. Secure your future without breaking the bank.",
       "trustBadge": {
         "title": "Affordable. Accessible. Empowering.",
         "description": "Weekly payments, easy enrollment, and coverage that fits your life. Built for the hardworking people of Tanzania."
@@ -35,11 +36,11 @@
       "badge": "Our Mission",
       "title": "Why Moha Exists: Dignity Through Protection",
       "intro": "Moha Insurance was founded with a simple but powerful mission: make insurance accessible to every Tanzanian, regardless of income or background.",
-      "problem": "Too many hardworking families — boda boda riders, mama ntilie, small business owners — go without protection because traditional insurance is too expensive or complicated. We changed that.",
+      "problem": "Too many hardworking families  boda boda riders, mama ntilie, small business owners  go without protection because traditional insurance is too expensive or complicated. We changed that.",
       "vision": "Our CEO started Moha after witnessing how a single unexpected event could devastate a family's finances. His vision: affordable, simple, and trustworthy insurance that empowers everyday Tanzanians.",
       "impact": {
         "title": "Beyond Insurance: Creating Opportunity",
-        "description": "Moha doesn't just protect families — we create jobs, empower communities, and invest in Tanzania's future. We're building a network of opportunity across every region."
+        "description": "Moha doesn't just protect families  we create jobs, empower communities, and invest in Tanzania's future. We're building a network of opportunity across every region."
       },
       "values": {
         "affordability": {
@@ -56,20 +57,20 @@
     "employment": {
       "badge": "Join Our Team",
       "title": "Work with Moha: Build Your Future While Helping Others",
-      "description": "We're not just an insurance company — we're a movement creating opportunities across Tanzania. Join us and be part of something bigger.",
+      "description": "We're not just an insurance company  we're a movement creating opportunities across Tanzania. Join us and be part of something bigger.",
       "heslb": {
         "title": "HESLB Loan Repayment Program",
-        "description": "Join Moha and we'll help you pay off your HESLB student loans. Build your career while clearing your debt — a fresh start for graduates.",
+        "description": "Join Moha and we'll help you pay off your HESLB student loans. Build your career while clearing your debt  a fresh start for graduates.",
         "benefits": ["Structured repayment support", "Career growth opportunities", "Professional training included"]
       },
       "insurance": {
         "title": "13-Week Insurance Benefit",
-        "description": "Pay a one-time interview fee and receive 13 weeks of life insurance coverage — protection from day one, whether you get the job or not.",
+        "description": "Pay a one-time interview fee and receive 13 weeks of life insurance coverage  protection from day one, whether you get the job or not.",
         "benefits": ["Immediate coverage starts", "No waiting period", "Peace of mind guaranteed"]
       },
       "jobs": {
         "title": "500+ Jobs Across Tanzania",
-        "description": "From Dar es Salaam to Mwanza, Arusha to Mbeya — Moha is creating employment opportunities in every region. Be part of our growing family.",
+        "description": "From Dar es Salaam to Mwanza, Arusha to Mbeya  Moha is creating employment opportunities in every region. Be part of our growing family.",
         "benefits": ["Nationwide opportunities", "Competitive salaries", "Career advancement paths"]
       },
       "cta": "View Open Positions",
@@ -251,7 +252,7 @@
     "hero": {
       "tag": "Our Story",
       "title": "Empowering Every Tanzanian Through Protection",
-      "subtitle": "More than insurance — we're a movement creating opportunity, dignity, and security for low-income families across Tanzania",
+      "subtitle": "More than insurance  we're a movement creating opportunity, dignity, and security for low-income families across Tanzania",
       "stats": {
         "families": "Families Protected",
         "jobs": "Jobs Created",
@@ -261,7 +262,7 @@
     "mission": {
       "tag": "Our Mission",
       "title": "Making Insurance Accessible to All",
-      "intro": "Moha was born from a simple observation: hardworking Tanzanians — boda boda riders, mama ntilie, small business owners — were being left behind by traditional insurance companies. High premiums, complex processes, and lack of trust kept millions unprotected.",
+      "intro": "Moha was born from a simple observation: hardworking Tanzanians  boda boda riders, mama ntilie, small business owners  were being left behind by traditional insurance companies. High premiums, complex processes, and lack of trust kept millions unprotected.",
       "changed": "We changed that.",
       "solution": "By offering insurance for just 500 TSH per day, simple enrollment, and fast claims processing, we've made protection accessible to everyday Tanzanians.",
       "beyondTitle": "Beyond Insurance: Creating Opportunity",
