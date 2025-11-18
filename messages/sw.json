@@ -291,23 +291,137 @@
       "title": "Bidhaa za Bima",
       "subtitle": "Chaguo za ulinzi kuu zilizoundwa kulinda kile kinachohitaji zaidi kwako"
     },
+    "tabs": {
+      "overview": "Muhtasari",
+      "benefits": "Faida",
+      "coverage": "Ulinzi",
+      "premium": "Kiasi cha Malipo",
+      "documents": "Nyaraka"
+    },
+    "details": {
+      "aboutProduct": "Kuhusu Bidhaa Hii",
+      "whyChoose": "Kwa Nini Kuchagua",
+      "comprehensiveCoverage": {
+        "title": "Ulinzi Kamili",
+        "description": "Ulinzi wa kila kitu kwa amani ya akili"
+      },
+      "fastClaims": {
+        "title": "Madai ya Haraka",
+        "description": "Uchakataji na malipo ya haraka"
+      },
+      "support247": {
+        "title": "Msaada wa Saa 24/7",
+        "description": "Daima tunapatikana unapotuhitaji"
+      },
+      "trustedBy": {
+        "title": "Imea​miniwa na Zaidi ya 50K",
+        "description": "Chaguo la Watanzania"
+      },
+      "keyBenefits": "Faida Muhimu",
+      "whatsCovered": "Kilicholindwa",
+      "premiumDetails": "Maelezo ya Malipo",
+      "eligibility": "Utiifu",
+      "ageRange": "Umri",
+      "openTo": "Wazi kwa raia wote wa Tanzania na wakazi",
+      "whyThisPlan": "Kwa Nini Mpango Huu Unakufaa",
+      "policyDocuments": "Nyaraka za Sera na Fomu",
+      "download": "Pakua"
+    },
     "life": {
       "title": "Bima ya Maisha",
+      "subtitle": "Linda familia yako kwa TSH 500 tu kwa siku",
       "description": "Linda familia yako kwa TSH 500 tu kwa siku - bima ya maisha ya bei nafuu iliyoundwa kwa Watanzania wa kila siku",
+      "overview": "Bima ya Maisha ya Moha imeundwa hasa kwa Watanzania wa kila siku - madereva wa boda boda, wauzaji wa soko, wamiliki wa biashara ndogo, na familia zinazofanya kazi kwa bidii. Kwa TSH 500 tu kwa siku (takriban TSH 15,000 kwa mwezi), unaweza kuhakikisha mustakbal wa kifedha wa familia yako na kuhakikisha kuwa wanalindwa hata ukiondoka.",
       "premium": "TSH 500/siku",
       "coverage": "Hadi TSh milioni 10",
-      "features": {
-        "coverage": "Ulinzi hadi TSh milioni 10",
-        "affordable": "TSH 500 tu kwa siku",
-        "flexible": "Chaguo za malipo zenye kubadilika",
-        "accidental": "Faida ya kifo cha ajali (malipo maradufu)",
-        "funeral": "Ulinzi wa gharama za mazishi",
-        "education": "Mfuko wa elimu ya watoto",
-        "noMedical": "Hakuna uchunguzi wa kimatibabu kwa ulinzi wa msingi",
-        "fastClaims": "Madai ya haraka ndani ya siku 7"
+      "premiumDetails": {
+        "daily": "TSH 500 kwa siku",
+        "weekly": "TSH 3,500 kwa wiki",
+        "monthly": "TSH 15,000 kwa mwezi",
+        "annually": "TSH 180,000 kwa mwaka"
       },
-      "learnMore": "Jifunze Zaidi",
-      "getQuote": "Pata Nukuu"
+      "coverageAmount": "Hadi TSh milioni 10",
+      "ageRange": "Miaka 18-65",
+      "policyTerm": "Miaka 1 hadi 30 inayoweza kufanywa upya",
+      "benefitsTitle": "Faida Muhimu",
+      "benefits": [
+        "Ulinzi wa faida ya kifo hadi TSh milioni 10",
+        "Malipo ya bei nafuu - TSH 500 tu kwa siku",
+        "Chaguo za malipo zenye kubadilika - kila siku, kila wiki, au kila mwezi",
+        "Faida ya kifo cha ajali (malipo maradufu)",
+        "Ulinzi wa gharama za mazishi hadi TSh milioni 2",
+        "Ulinzi wa mfuko wa elimu ya watoto",
+        "Malipo ya awali ya ugonjwa wa mwisho",
+        "Hakuna uchunguzi wa kimatibabu unahitajika kwa ulinzi wa msingi",
+        "Ulinzi wa malipo ya deni/mkopo uliosalia",
+        "Ubadilishaji wa mapato ya familia kwa miezi 3-12",
+        "Uchakataji wa madai na msaada wa saa 24/7",
+        "Uchunguzi wa afya wa bure wa kila mwaka"
+      ],
+      "coverage": [
+        "Kifo cha asili kutokana na sababu yoyote",
+        "Kifo cha ajali (barabara, kazini, nyumbani)",
+        "Utambuzi wa ugonjwa wa mwisho (malipo ya awali)",
+        "Ulinzi wa ulemavu kamili wa kudumu",
+        "Gharama za mazishi na kuzikwa",
+        "Mfuko wa kuendelea na elimu ya watoto",
+        "Malipo ya mkopo/deni la nyumba uliosalia",
+        "Gharama za kimatibabu kabla ya kifo (hadi TSh 500,000)",
+        "Uhamishaji wa maiti (ndani ya Tanzania)",
+        "Huduma za ushauri wa familia"
+      ],
+      "keyFeatures": [
+        {
+          "title": "Bei Nafuu kwa Kila Mtu",
+          "description": "TSH 500 tu kwa siku - chini ya bei ya soda. Imejengwa hasa kwa Watanzania wanaofanya kazi."
+        },
+        {
+          "title": "Malipo Yanayobadilika",
+          "description": "Chagua malipo ya kila siku, kila wiki, au kila mwezi. Lipa kupitia M-Pesa, Tigo Pesa, Airtel Money, au uhamisho wa benki."
+        },
+        {
+          "title": "Uchakataji wa Haraka wa Madai",
+          "description": "Asilimia 98 ya madai yanalipwa ndani ya siku 7. Tunaelewa familia zinahitaji msaada haraka wakati mgumu."
+        },
+        {
+          "title": "Hakuna Ada Zilizofichwa",
+          "description": "Bei wazi. Unachokiona ndio unacholipa. Hakuna malipo ya mshangao au masharti yaliyofichwa."
+        },
+        {
+          "title": "Ulinzi wa Familia",
+          "description": "Hakikisha mke/mume wako, watoto, na wategemezi wako wana usalama wa kifedha hata ukiwa hayupo."
+        },
+        {
+          "title": "Usajili Rahisi",
+          "description": "Mchakato rahisi wa maombi. Hakuna fomu ngumu au uchunguzi wa muda mrefu wa kimatibabu kwa ulinzi wa kawaida."
+        }
+      ],
+      "exclusions": [
+        "Kujiua ndani ya miaka 2 ya kwanza ya sera",
+        "Kifo kutokana na ugonjwa wa mwisho uliokuwepo kabla ambao haukufichwa wakati wa usajili",
+        "Kifo wakati wa kufanya uhalifu",
+        "Kifo kutokana na vita au vitendo vya ugaidi",
+        "Majeraha yanayojitokeza"
+      ],
+      "exclusionsTitle": "Mambo Muhimu Yasiyolindwa",
+      "documents": [
+        { "name": "Hati ya Sera ya Bima ya Maisha", "size": "2.4 MB" },
+        { "name": "Kikokotoo cha Malipo", "size": "856 KB" },
+        { "name": "Fomu ya Dai", "size": "1.2 MB" },
+        { "name": "Fomu ya Kuitaja Mstahiki", "size": "645 KB" },
+        { "name": "Mwongozo wa Ratiba ya Malipo", "size": "523 KB" },
+        { "name": "Maswali Yanayoulizwa Mara kwa Mara", "size": "1.8 MB" }
+      ]
+    },
+    "sidebar": {
+      "getQuote": "Pata Nukuu",
+      "speakWithExperts": "Zungumza na wataalam wetu wa bima kupata nukuu iliyobinafsishwa",
+      "requestCall": "Omba Simu",
+      "call": "Piga Simu",
+      "quickLinks": "Viungo vya Haraka",
+      "fileClaim": "Wasilisha Dai",
+      "contactSupport": "Wasiliana na Msaada",
+      "findBranch": "Tafuta Tawi"
     },
     "needHelp": {
       "title": "Unahitaji Msaada wa Kuchagua?",
@@ -460,6 +574,85 @@
         "returnHome": "Rudi Nyumbani",
         "backToAbout": "Rudi kwa Kuhusu Sisi"
       }
+    }
+  },
+  "newClaim": {
+    "title": "Wasilisha Dai",
+    "subtitle": "Kamilisha fomu iliyo hapa chini ili kuwasilisha dai lako la bima",
+    "backToClaims": "Rudi kwa Madai",
+    "emergencyNotice": {
+      "title": "Madai ya Dharura",
+      "description": "Kwa madai ya dharura yanayohitaji uangalifu wa haraka, tafadhali piga simu kwa hotline yetu ya saa 24/7: +255 123 456 789"
+    },
+    "steps": {
+      "incidentDetails": "Maelezo ya Tukio",
+      "contactInfo": "Taarifa za Mawasiliano",
+      "review": "Kagua"
+    },
+    "incidentDetails": {
+      "title": "Maelezo ya Tukio",
+      "claimType": "Aina ya Dai *",
+      "policyNumber": "Namba ya Sera *",
+      "incidentDate": "Tarehe ya Tukio *",
+      "incidentTime": "Muda wa Tukio *",
+      "location": "Mahali pa Tukio *",
+      "amount": "Kiasi cha Dai (TZS) *",
+      "amountHelp": "Weka gharama inayokadiria ya uharibifu au gharama",
+      "description": "Maelezo ya Tukio *",
+      "descriptionPlaceholder": "Tafadhali toa maelezo ya kina ya kilichotokea",
+      "policeReport": "Namba ya Ripoti ya Polisi (ikiwa inatumika)",
+      "witnesses": "Taarifa za Mashahidi",
+      "witnessesPlaceholder": "Majina na taarifa za mawasiliano ya mashahidi wowote",
+      "continue": "Endelea na Taarifa za Mawasiliano"
+    },
+    "contactInfo": {
+      "title": "Taarifa za Mawasiliano",
+      "firstName": "Jina la Kwanza *",
+      "lastName": "Jina la Mwisho *",
+      "email": "Barua Pepe *",
+      "phone": "Namba ya Simu *",
+      "documents": "Pakia Nyaraka za Kuunga Mkono",
+      "uploadPrompt": "Bofya ili kupakia au buruta na udondoshe",
+      "uploadInfo": "JPG, PNG, au PDF (Upeo wa 10MB kila moja, hadi faili 5)",
+      "uploadStatus": "faili zilizopakiwa kati ya 5",
+      "uploading": "Inapakia...",
+      "back": "Nyuma",
+      "reviewClaim": "Kagua Dai"
+    },
+    "review": {
+      "title": "Kagua Dai Lako",
+      "incidentDetails": "Maelezo ya Tukio",
+      "claimType": "Aina ya Dai:",
+      "policyNumber": "Namba ya Sera:",
+      "date": "Tarehe:",
+      "location": "Mahali:",
+      "description": "Maelezo",
+      "noDescription": "Hakuna maelezo yaliyotolewa",
+      "contactInfo": "Taarifa za Mawasiliano",
+      "name": "Jina:",
+      "email": "Barua Pepe:",
+      "phone": "Simu:",
+      "uploadedDocuments": "Nyaraka Zilizopakiwa",
+      "viewFullSize": "Ona Ukubwa Kamili",
+      "viewDocument": "Ona Hati",
+      "confirmation": "Kwa kuwasilisha dai hili, unakubali kuwa taarifa zote zilizotolewa ni sahihi na kamili kwa ujuzi wako bora.",
+      "back": "Nyuma",
+      "submit": "Wasilisha Dai",
+      "submitting": "Inatuma..."
+    },
+    "success": {
+      "title": "Dai Limewasilishwa!",
+      "claimNumber": "Namba yako ya dai ni:",
+      "emailSent": "Tumetuma barua pepe ya uthibitisho kwa",
+      "reviewTime": "Timu yetu itakagua dai lako na kuwasiliana nawe ndani ya masaa 24-48. Tafadhali hifadhi namba yako ya dai kwa marejeo ya baadaye.",
+      "trackClaim": "Fuatilia Dai Lako",
+      "returnHome": "Rudi Nyumbani"
+    },
+    "claimTypes": {
+      "auto": "Bima ya Gari",
+      "home": "Bima ya Nyumba",
+      "life": "Bima ya Maisha",
+      "business": "Bima ya Biashara"
     }
   }
 }

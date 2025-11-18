@@ -15,10 +15,7 @@ const locales = ['en', 'sw'];
 
 const footerProducts = [
   "Life Insurance",
-  "Motor Insurance", 
-  "Travel Insurance",
-  "Business Insurance",
-  "Property Insurance"
+ 
 ];
 
 export default async function RootLayout({

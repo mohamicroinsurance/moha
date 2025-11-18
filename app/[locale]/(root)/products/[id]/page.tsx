@@ -8,9 +8,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Heart, Car, Plane, Briefcase, Home, CheckCircle, Download, Phone, ArrowRight, Shield } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ProductDetails() {
   const { id, locale } = useParams() as { id?: string; locale?: string };
+  const t = useTranslations();
   const productSlug = id || 'life';
 
   const products: Record<string, any> = {
@@ -141,53 +143,53 @@ export default function ProductDetails() {
           <div className="lg:col-span-2">
             <Tabs defaultValue="overview" className="w-full">
               <TabsList className="grid w-full grid-cols-5 mb-8">
-                <TabsTrigger value="overview">Overview</TabsTrigger>
-                <TabsTrigger value="benefits">Benefits</TabsTrigger>
-                <TabsTrigger value="coverage">Coverage</TabsTrigger>
-                <TabsTrigger value="premium">Premium</TabsTrigger>
-                <TabsTrigger value="documents">Documents</TabsTrigger>
+                <TabsTrigger value="overview">{t('products.tabs.overview')}</TabsTrigger>
+                <TabsTrigger value="benefits">{t('products.tabs.benefits')}</TabsTrigger>
+                <TabsTrigger value="coverage">{t('products.tabs.coverage')}</TabsTrigger>
+                <TabsTrigger value="premium">{t('products.tabs.premium')}</TabsTrigger>
+                <TabsTrigger value="documents">{t('products.tabs.documents')}</TabsTrigger>
               </TabsList>
 
               <TabsContent value="overview" className="space-y-6">
                 <Card>
                   <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-4">About This Product</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('products.details.aboutProduct')}</h2>
                     <p className="text-gray-700 leading-relaxed text-lg">
-                      {product.overview}
+                      {t('products.life.overview')}
                     </p>
                   </CardContent>
                 </Card>
 
                 <Card>
                   <CardContent className="p-8">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Why Choose Our {product.title}?</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">{t('products.details.whyChoose')} {t('products.life.title')}?</h3>
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="flex items-start gap-3">
                         <Shield className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-gray-900">Comprehensive Coverage</h4>
-                          <p className="text-sm text-gray-600">All-inclusive protection for peace of mind</p>
+                          <h4 className="font-semibold text-gray-900">{t('products.details.comprehensiveCoverage.title')}</h4>
+                          <p className="text-sm text-gray-600">{t('products.details.comprehensiveCoverage.description')}</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-gray-900">Fast Claims</h4>
-                          <p className="text-sm text-gray-600">Quick processing and settlement</p>
+                          <h4 className="font-semibold text-gray-900">{t('products.details.fastClaims.title')}</h4>
+                          <p className="text-sm text-gray-600">{t('products.details.fastClaims.description')}</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <Phone className="w-5 h-5 text-purple-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-gray-900">24/7 Support</h4>
-                          <p className="text-sm text-gray-600">Always available when you need us</p>
+                          <h4 className="font-semibold text-gray-900">{t('products.details.support247.title')}</h4>
+                          <p className="text-sm text-gray-600">{t('products.details.support247.description')}</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <Heart className="w-5 h-5 text-pink-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-gray-900">Trusted by 50K+</h4>
-                          <p className="text-sm text-gray-600">Tanzania's preferred choice</p>
+                          <h4 className="font-semibold text-gray-900">{t('products.details.trustedBy.title')}</h4>
+                          <p className="text-sm text-gray-600">{t('products.details.trustedBy.description')}</p>
                         </div>
                       </div>
                     </div>
@@ -198,9 +200,9 @@ export default function ProductDetails() {
               <TabsContent value="benefits">
                 <Card>
                   <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('products.details.keyBenefits')}</h2>
                     <div className="space-y-4">
-                      {product.benefits.map((benefit: string, index: number) => (
+                      {t.raw('products.life.benefits').map((benefit: string, index: number) => (
                         <motion.div
                           key={index}
                           initial={{ opacity: 0, x: -20 }}
@@ -220,9 +222,9 @@ export default function ProductDetails() {
               <TabsContent value="coverage">
                 <Card>
                   <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">What's Covered</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('products.details.whatsCovered')}</h2>
                     <div className="grid md:grid-cols-2 gap-4">
-                      {product.coverage.map((item: string, index: number) => (
+                      {t.raw('products.life.coverage').map((item: string, index: number) => (
                         <motion.div
                           key={index}
                           initial={{ opacity: 0, scale: 0.9 }}
@@ -236,11 +238,11 @@ export default function ProductDetails() {
                       ))}
                     </div>
                     
-                    {product.exclusions && (
+                    {t.raw('products.life.exclusions') && (
                       <div className="mt-8 p-6 bg-red-50 border border-red-200 rounded-lg">
-                        <h3 className="text-lg font-bold text-red-900 mb-4">Important Exclusions</h3>
+                        <h3 className="text-lg font-bold text-red-900 mb-4">{t('products.life.exclusionsTitle')}</h3>
                         <ul className="space-y-2">
-                          {product.exclusions.map((exclusion: string, index: number) => (
+                          {t.raw('products.life.exclusions').map((exclusion: string, index: number) => (
                             <li key={index} className="flex items-start gap-2 text-red-800">
                               <span className="text-red-600 mt-1">⚠</span>
                               <span>{exclusion}</span>
@@ -256,37 +258,37 @@ export default function ProductDetails() {
               <TabsContent value="premium">
                 <Card>
                   <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Premium Details</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('products.details.premiumDetails')}</h2>
                     
                     <div className="grid md:grid-cols-2 gap-6 mb-8">
                       <div className="p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl border-2 border-orange-300">
                         <h3 className="text-sm font-medium text-orange-900 mb-2">Daily Premium</h3>
-                        <p className="text-4xl font-bold text-orange-600">{product.premiumDetails?.daily}</p>
+                        <p className="text-4xl font-bold text-orange-600">{t('products.life.premiumDetails.daily')}</p>
                       </div>
                       <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border-2 border-blue-300">
                         <h3 className="text-sm font-medium text-blue-900 mb-2">Monthly Premium</h3>
-                        <p className="text-4xl font-bold text-blue-600">{product.premiumDetails?.monthly}</p>
+                        <p className="text-4xl font-bold text-blue-600">{t('products.life.premiumDetails.monthly')}</p>
                       </div>
                       <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200">
                         <h3 className="text-sm font-medium text-green-900 mb-2">Coverage Amount</h3>
-                        <p className="text-3xl font-bold text-green-700">{product.coverageAmount}</p>
+                        <p className="text-3xl font-bold text-green-700">{t('products.life.coverageAmount')}</p>
                       </div>
                       <div className="p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border border-purple-200">
                         <h3 className="text-sm font-medium text-purple-900 mb-2">Policy Term</h3>
-                        <p className="text-2xl font-bold text-purple-700">{product.policyTerm}</p>
+                        <p className="text-2xl font-bold text-purple-700">{t('products.life.policyTerm')}</p>
                       </div>
                     </div>
 
                     <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-6">
-                      <h3 className="font-bold text-blue-900 mb-2">Eligibility</h3>
-                      <p className="text-blue-800">Age Range: <strong>{product.ageRange}</strong></p>
-                      <p className="text-blue-800 mt-1">Open to all Tanzanian citizens and residents</p>
+                      <h3 className="font-bold text-blue-900 mb-2">{t('products.details.eligibility')}</h3>
+                      <p className="text-blue-800">{t('products.details.ageRange')}: <strong>{t('products.life.ageRange')}</strong></p>
+                      <p className="text-blue-800 mt-1">{t('products.details.openTo')}</p>
                     </div>
 
-                    {product.keyFeatures && (
+                    {t.raw('products.life.keyFeatures') && (
                       <div className="space-y-4">
-                        <h3 className="text-xl font-bold text-gray-900 mb-4">Why This Plan Works for You</h3>
-                        {product.keyFeatures.map((feature: any, index: number) => (
+                        <h3 className="text-xl font-bold text-gray-900 mb-4">{t('products.details.whyThisPlan')}</h3>
+                        {t.raw('products.life.keyFeatures').map((feature: any, index: number) => (
                           <motion.div
                             key={index}
                             initial={{ opacity: 0, x: -20 }}
@@ -307,9 +309,9 @@ export default function ProductDetails() {
               <TabsContent value="documents">
                 <Card>
                   <CardContent className="p-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">Policy Documents & Forms</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('products.details.policyDocuments')}</h2>
                     <div className="space-y-3">
-                      {product.documents.map((doc: any, index: number) => (
+                      {t.raw('products.life.documents').map((doc: any, index: number) => (
                         <div key={index} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-all">
                           <div className="flex items-center gap-3">
                             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -321,7 +323,7 @@ export default function ProductDetails() {
                             </div>
                           </div>
                           <Button variant="ghost" size="sm">
-                            Download
+                            {t('products.details.download')}
                           </Button>
                         </div>
                       ))}
@@ -337,19 +339,19 @@ export default function ProductDetails() {
             <div className="sticky top-24 space-y-6">
               <Card className="border-2 border-blue-600">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Get a Quote</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">{t('products.sidebar.getQuote')}</h3>
                   <p className="text-gray-600 mb-6">
-                    Speak with our insurance experts to get a personalized quote
+                    {t('products.sidebar.speakWithExperts')}
                   </p>
                   <Link href={`/${locale}${createPageUrl("Support")}`}>
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 mb-3">
                       <Phone className="w-4 h-4 mr-2" />
-                      Request a Call
+                      {t('products.sidebar.requestCall')}
                     </Button>
                   </Link>
                   <a href="tel:+255123456789">
                     <Button variant="outline" className="w-full">
-                      Call: +255 123 456 789
+                      {t('products.sidebar.call')}: +255 123 456 789
                     </Button>
                   </a>
                 </CardContent>
@@ -357,19 +359,19 @@ export default function ProductDetails() {
 
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-4">Quick Links</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-4">{t('products.sidebar.quickLinks')}</h3>
                   <div className="space-y-2">
                     <Link href={`/${locale}${createPageUrl("Claims")}`} className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
                       <ArrowRight className="w-4 h-4" />
-                      File a Claim
+                      {t('products.sidebar.fileClaim')}
                     </Link>
                     <Link href={`/${locale}${createPageUrl("Support")}`} className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
                       <ArrowRight className="w-4 h-4" />
-                      Contact Support
+                      {t('products.sidebar.contactSupport')}
                     </Link>
                     <Link href={`/${locale}${createPageUrl("BranchLocator")}`} className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
                       <ArrowRight className="w-4 h-4" />
-                      Find a Branch
+                      {t('products.sidebar.findBranch')}
                     </Link>
                   </div>
                 </CardContent>

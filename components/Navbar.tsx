@@ -44,7 +44,7 @@ export default function Navbar() {
             <div className="flex items-center hover:text-orange-300 transition-colors">
               <MapPin className="w-4 h-4 mr-1" />
               <Link href={`/${locale}/branch-locator`}>
--                Branch Locator
+-               
 +                {t('nav.branchLocator')}
               </Link>
             </div>

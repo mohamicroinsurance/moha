@@ -10,6 +10,11 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono"
 export const metadata: Metadata = {
   title: "Moha Micro Insurance",
   description: "Protecting what matters most with affordable insurance solutions",
+  icons: {
+        icon: "/moha-logo.svg",           // favicon
+        shortcut: "/moha-logo.svg",       // optional, for older browsers
+        apple: "/moha-logo.svg",          // optional, for iOS devices
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileText, Download, Briefcase, Calendar, MapPin, CheckCircle, Loader2, User, BookOpen, Newspaper, GraduationCap } from "lucide-react";
 import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 interface NewsItem {
   id: string;
@@ -34,6 +35,7 @@ interface Document {
 }
 
 export default function Resources() {
+  const t = useTranslations();
   const [applyingFor, setApplyingFor] = useState(null);
   const [applicationSubmitted, setApplicationSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -270,29 +272,28 @@ export default function Resources() {
           >
             <div className="inline-flex items-center gap-2 bg-orange-600/30 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
               <BookOpen className="w-4 h-4 text-orange-300" />
-              <span className="text-sm font-medium">Resources & Opportunities</span>
+              <span className="text-sm font-medium">{t('resources.hero.tag')}</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Stay Informed, <span className="text-orange-300">Get Empowered</span>
+              {t('resources.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8">
-              Latest news, helpful documents, and exciting career opportunities 
-              to build your future with Moha
+              {t('resources.hero.subtitle')}
             </p>
             <div className="grid grid-cols-3 gap-6 mt-12">
               <div className="text-center">
                 <Newspaper className="w-8 h-8 text-orange-300 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">Latest News</div>
+                <div className="text-2xl font-bold text-white">{t('resources.hero.tabs.news')}</div>
                 <div className="text-sm text-blue-200">Stay Updated</div>
               </div>
               <div className="text-center">
                 <FileText className="w-8 h-8 text-orange-300 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">Documents</div>
+                <div className="text-2xl font-bold text-white">{t('resources.hero.tabs.documents')}</div>
                 <div className="text-sm text-blue-200">Download Resources</div>
               </div>
               <div className="text-center">
                 <GraduationCap className="w-8 h-8 text-orange-300 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-white">Careers</div>
+                <div className="text-2xl font-bold text-white">{t('resources.hero.tabs.careers')}</div>
                 <div className="text-sm text-blue-200">Join Our Team</div>
               </div>
             </div>
@@ -306,15 +307,15 @@ export default function Resources() {
             <TabsList className="grid w-full grid-cols-3 mb-12 max-w-2xl mx-auto h-14 bg-blue-50">
               <TabsTrigger value="news" className="data-[state=active]:bg-orange-500 data-[state=active]:text-white text-lg font-medium">
                 <Newspaper className="w-5 h-5 mr-2" />
-                News
+                {t('resources.hero.tabs.news')}
               </TabsTrigger>
               <TabsTrigger value="downloads" className="data-[state=active]:bg-orange-500 data-[state=active]:text-white text-lg font-medium">
                 <FileText className="w-5 h-5 mr-2" />
-                Downloads
+                {t('resources.hero.tabs.documents')}
               </TabsTrigger>
               <TabsTrigger value="careers" id="careers" className="data-[state=active]:bg-orange-500 data-[state=active]:text-white text-lg font-medium">
                 <Briefcase className="w-5 h-5 mr-2" />
-                Careers
+                {t('resources.hero.tabs.careers')}
               </TabsTrigger>
             </TabsList>
 
@@ -326,7 +327,7 @@ export default function Resources() {
               ) : news.length === 0 ? (
                 <div className="text-center py-20">
                   <FileText className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                  <p className="text-gray-500 text-lg">No news articles available</p>
+                  <p className="text-gray-500 text-lg">{t('resources.news.noArticles')}</p>
                 </div>
               ) : (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -381,7 +382,7 @@ export default function Resources() {
             <TabsContent value="downloads">
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Policy Documents & Forms</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('resources.documents.title')}</h2>
                   {isLoadingDocs ? (
                     <div className="flex justify-center items-center py-12">
                       <Loader2 className="w-12 h-12 animate-spin text-blue-600" />
@@ -389,7 +390,7 @@ export default function Resources() {
                   ) : documents.length === 0 ? (
                     <div className="text-center py-12">
                       <FileText className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                      <p className="text-gray-500 text-lg">No documents available</p>
+                      <p className="text-gray-500 text-lg">{t('resources.documents.noDocuments')}</p>
                     </div>
                   ) : (
                     <div className="space-y-3">
@@ -428,9 +429,9 @@ export default function Resources() {
             <TabsContent value="careers">
               <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">Join Our Team</h2>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('resources.careers.title')}</h2>
                   <p className="text-lg text-gray-600">
-                    Build your career with Tanzania's leading insurance provider
+                    {t('resources.careers.subtitle')}
                   </p>
                 </div>
 
@@ -465,18 +466,18 @@ export default function Resources() {
                             <Dialog>
                               <DialogTrigger asChild>
                                 <Button className="bg-blue-600 hover:bg-blue-700" onClick={() => handleApply(job)}>
-                                  Apply Now
+                                  {t('resources.careers.applyNow')}
                                 </Button>
                               </DialogTrigger>
                               <DialogContent className="max-w-2xl">
                                 <DialogHeader>
-                                  <DialogTitle>Apply for {job.title}</DialogTitle>
+                                  <DialogTitle>{t('resources.careers.application.title')} {job.title}</DialogTitle>
                                 </DialogHeader>
                                 {!applicationSubmitted ? (
                                   <form onSubmit={handleApplicationSubmit} className="space-y-4 mt-4">
                                     <div className="grid grid-cols-2 gap-4">
                                       <div>
-                                        <Label htmlFor="applicantName">Full Name *</Label>
+                                        <Label htmlFor="applicantName">{t('resources.careers.application.fullName')}</Label>
                                         <Input 
                                           id="applicantName" 
                                           value={applicationData.applicantName}
@@ -485,7 +486,7 @@ export default function Resources() {
                                         />
                                       </div>
                                       <div>
-                                        <Label htmlFor="email">Email Address *</Label>
+                                        <Label htmlFor="email">{t('resources.careers.application.email')}</Label>
                                         <Input 
                                           id="email" 
                                           type="email" 
@@ -497,7 +498,7 @@ export default function Resources() {
                                     </div>
                                     <div className="grid grid-cols-2 gap-4">
                                       <div>
-                                        <Label htmlFor="phone">Phone Number *</Label>
+                                        <Label htmlFor="phone">{t('resources.careers.application.phone')}</Label>
                                         <Input 
                                           id="phone" 
                                           type="tel" 
@@ -507,7 +508,7 @@ export default function Resources() {
                                         />
                                       </div>
                                       <div>
-                                        <Label htmlFor="availableFrom">Available From</Label>
+                                        <Label htmlFor="availableFrom">{t('resources.careers.application.availableFrom')}</Label>
                                         <Input 
                                           id="availableFrom" 
                                           type="date" 
@@ -518,7 +519,7 @@ export default function Resources() {
                                     </div>
                                     <div className="grid grid-cols-2 gap-4">
                                       <div>
-                                        <Label htmlFor="experience">Years of Experience *</Label>
+                                        <Label htmlFor="experience">{t('resources.careers.application.experience')}</Label>
                                         <Input 
                                           id="experience" 
                                           placeholder="e.g., 5 years"
@@ -528,7 +529,7 @@ export default function Resources() {
                                         />
                                       </div>
                                       <div>
-                                        <Label htmlFor="education">Highest Education *</Label>
+                                        <Label htmlFor="education">{t('resources.careers.application.education')}</Label>
                                         <Input 
                                           id="education" 
                                           placeholder="e.g., Bachelor's Degree"
@@ -540,7 +541,7 @@ export default function Resources() {
                                     </div>
                                     <div className="grid grid-cols-2 gap-4">
                                       <div>
-                                        <Label htmlFor="currentCompany">Current Company</Label>
+                                        <Label htmlFor="currentCompany">{t('resources.careers.application.currentCompany')}</Label>
                                         <Input 
                                           id="currentCompany" 
                                           value={applicationData.currentCompany}
@@ -548,7 +549,7 @@ export default function Resources() {
                                         />
                                       </div>
                                       <div>
-                                        <Label htmlFor="expectedSalary">Expected Salary</Label>
+                                        <Label htmlFor="expectedSalary">{t('resources.careers.application.expectedSalary')}</Label>
                                         <Input 
                                           id="expectedSalary" 
                                           placeholder="e.g., 5,000,000 TZS"
@@ -558,7 +559,7 @@ export default function Resources() {
                                       </div>
                                     </div>
                                     <div>
-                                      <Label htmlFor="skills">Skills (comma-separated)</Label>
+                                      <Label htmlFor="skills">{t('resources.careers.application.skills')}</Label>
                                       <Input 
                                         id="skills" 
                                         placeholder="e.g., Insurance, Sales, Customer Service"
@@ -567,7 +568,7 @@ export default function Resources() {
                                       />
                                     </div>
                                     <div>
-                                      <Label htmlFor="coverLetter">Cover Letter *</Label>
+                                      <Label htmlFor="coverLetter">{t('resources.careers.application.coverLetter')}</Label>
                                       <Textarea 
                                         id="coverLetter" 
                                         rows={6} 
@@ -578,7 +579,7 @@ export default function Resources() {
                                       />
                                     </div>
                                     <div>
-                                      <Label htmlFor="references">References (Optional)</Label>
+                                      <Label htmlFor="references">{t('resources.careers.application.references')}</Label>
                                       <Textarea 
                                         id="references" 
                                         rows={3} 
@@ -588,7 +589,7 @@ export default function Resources() {
                                       />
                                     </div>
                                     <div>
-                                      <Label htmlFor="cv">Upload CV/Resume (Optional)</Label>
+                                      <Label htmlFor="cv">{t('resources.careers.application.uploadCV')}</Label>
                                       <Input 
                                         id="cv" 
                                         type="file" 
@@ -605,18 +606,18 @@ export default function Resources() {
                                       {isSubmitting ? (
                                         <>
                                           <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                                          Submitting...
+                                          {t('resources.careers.application.submitting')}
                                         </>
                                       ) : (
-                                        'Submit Application'
+                                        t('resources.careers.application.submit')
                                       )}
                                     </Button>
                                   </form>
                                 ) : (
                                   <div className="text-center py-8">
                                     <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2">Application Submitted!</h3>
-                                    <p className="text-gray-600">We'll review your application and get back to you soon</p>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-2">{t('resources.careers.application.success.title')}</h3>
+                                    <p className="text-gray-600">{t('resources.careers.application.success.message')}</p>
                                   </div>
                                 )}
                               </DialogContent>

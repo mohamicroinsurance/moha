@@ -8,11 +8,8 @@ export default function Footer() {
   const t = useTranslations();
 
   const footerProducts = [
-    "Auto Insurance",
-    "Home Insurance", 
-    "Health Insurance",
-    "Business Insurance",
-    "Travel Insurance",
+    "Life Insurance",
+    
   ];
 
   return (

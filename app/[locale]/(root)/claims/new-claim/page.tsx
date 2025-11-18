@@ -11,10 +11,13 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { AlertCircle, Upload, CheckCircle2, ArrowLeft, FileText, User, ClipboardCheck, X, Loader2 } from "lucide-react"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter, useParams } from "next/navigation"
+import { useTranslations } from "next-intl"
 
 export default function FileClaimPage() {
   const router = useRouter()
+  const { locale } = useParams() as { locale: string }
+  const t = useTranslations()
   const [step, setStep] = useState(1)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [uploadedFiles, setUploadedFiles] = useState<Array<{name: string, url: string, size: number}>>([])
@@ -165,14 +168,14 @@ export default function FileClaimPage() {
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="mb-8">
-            <Link href="/claims">
+            <Link href={`/${locale}/claims`}>
               <Button variant="ghost" className="mb-4">
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Claims
+                {t('newClaim.backToClaims')}
               </Button>
             </Link>
-            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">File a Claim</h1>
-            <p className="text-lg text-slate-600">Complete the form below to submit your insurance claim</p>
+            <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">{t('newClaim.title')}</h1>
+            <p className="text-lg text-slate-600">{t('newClaim.subtitle')}</p>
           </div>
 
           {/* Progress Steps */}
@@ -223,15 +226,15 @@ export default function FileClaimPage() {
                   <div className="flex justify-between mt-2">
                     <span className={`text-sm font-medium flex items-center gap-2 ${step >= 1 ? "text-blue-600" : "text-slate-600"}`}>
                       <FileText className="h-4 w-4" />
-                      Incident Details
+                      {t('newClaim.steps.incidentDetails')}
                     </span>
                     <span className={`text-sm font-medium flex items-center gap-2 ${step >= 2 ? "text-blue-600" : "text-slate-600"}`}>
                       <User className="h-4 w-4" />
-                      Contact Info
+                      {t('newClaim.steps.contactInfo')}
                     </span>
                     <span className={`text-sm font-medium flex items-center gap-2 ${step >= 3 ? "text-blue-600" : "text-slate-600"}`}>
                       <ClipboardCheck className="h-4 w-4" />
-                      Review
+                      {t('newClaim.steps.review')}
                     </span>
                   </div>
                 </div>
@@ -244,9 +247,9 @@ export default function FileClaimPage() {
             <CardContent className="p-4 flex items-start gap-3">
               <AlertCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-slate-900">Emergency Claims</p>
+                <p className="font-semibold text-slate-900">{t('newClaim.emergencyNotice.title')}</p>
                 <p className="text-sm text-slate-600">
-                  For urgent claims requiring immediate attention, please call our 24/7 hotline: +255 123 456 789
+                  {t('newClaim.emergencyNotice.description')}
                 </p>
               </div>
             </CardContent>
@@ -273,30 +276,30 @@ export default function FileClaimPage() {
                 <CardHeader className="border-b bg-gradient-to-r from-blue-50 to-slate-50">
                   <CardTitle className="text-2xl text-slate-900 flex items-center gap-2">
                     <FileText className="h-6 w-6 text-blue-600" />
-                    Incident Details
+                    {t('newClaim.incidentDetails.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 pt-6">
                   <div className="space-y-2">
-                    <Label htmlFor="claimType">Claim Type *</Label>
+                    <Label htmlFor="claimType">{t('newClaim.incidentDetails.claimType')}</Label>
                     <Select
                       value={formData.claimType}
                       onValueChange={(value) => setFormData({ ...formData, claimType: value })}
                     >
                       <SelectTrigger>
-                        <SelectValue placeholder="Select claim type" />
+                        <SelectValue placeholder={t('newClaim.incidentDetails.claimType')} />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="auto">Auto Insurance</SelectItem>
-                        <SelectItem value="home">Home Insurance</SelectItem>
-                        <SelectItem value="life">Life Insurance</SelectItem>
-                        <SelectItem value="business">Business Insurance</SelectItem>
+                        <SelectItem value="auto">{t('newClaim.claimTypes.auto')}</SelectItem>
+                        <SelectItem value="home">{t('newClaim.claimTypes.home')}</SelectItem>
+                        <SelectItem value="life">{t('newClaim.claimTypes.life')}</SelectItem>
+                        <SelectItem value="business">{t('newClaim.claimTypes.business')}</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="policyNumber">Policy Number *</Label>
+                    <Label htmlFor="policyNumber">{t('newClaim.incidentDetails.policyNumber')}</Label>
                     <Input
                       id="policyNumber"
                       placeholder="Enter your policy number"
@@ -308,7 +311,7 @@ export default function FileClaimPage() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="incidentDate">Date of Incident *</Label>
+                      <Label htmlFor="incidentDate">{t('newClaim.incidentDetails.incidentDate')}</Label>
                       <Input
                         id="incidentDate"
                         type="date"
@@ -318,7 +321,7 @@ export default function FileClaimPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="incidentTime">Time of Incident *</Label>
+                      <Label htmlFor="incidentTime">{t('newClaim.incidentDetails.incidentTime')}</Label>
                       <Input
                         id="incidentTime"
                         type="time"
@@ -330,10 +333,10 @@ export default function FileClaimPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="location">Location of Incident *</Label>
+                    <Label htmlFor="location">{t('newClaim.incidentDetails.location')}</Label>
                     <Input
                       id="location"
-                      placeholder="Enter the location where the incident occurred"
+                      placeholder={t('newClaim.incidentDetails.location')}
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                       required
@@ -341,25 +344,25 @@ export default function FileClaimPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="amount">Claim Amount (TZS) *</Label>
+                    <Label htmlFor="amount">{t('newClaim.incidentDetails.amount')}</Label>
                     <Input
                       id="amount"
                       type="number"
-                      placeholder="Enter estimated claim amount"
+                      placeholder={t('newClaim.incidentDetails.amount')}
                       value={formData.amount}
                       onChange={(e) => setFormData({ ...formData, amount: e.target.value })}
                       required
                       min="0"
                       step="1000"
                     />
-                    <p className="text-sm text-gray-500">Enter the estimated cost of damages or expenses</p>
+                    <p className="text-sm text-gray-500">{t('newClaim.incidentDetails.amountHelp')}</p>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="description">Description of Incident *</Label>
+                    <Label htmlFor="description">{t('newClaim.incidentDetails.description')}</Label>
                     <Textarea
                       id="description"
-                      placeholder="Please provide a detailed description of what happened"
+                      placeholder={t('newClaim.incidentDetails.descriptionPlaceholder')}
                       rows={6}
                       value={formData.description}
                       onChange={(e) => setFormData({ ...formData, description: e.target.value })}
@@ -368,20 +371,20 @@ export default function FileClaimPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="policeReportNumber">Police Report Number (if applicable)</Label>
+                    <Label htmlFor="policeReportNumber">{t('newClaim.incidentDetails.policeReport')}</Label>
                     <Input
                       id="policeReportNumber"
-                      placeholder="Enter police report number"
+                      placeholder={t('newClaim.incidentDetails.policeReport')}
                       value={formData.policeReportNumber}
                       onChange={(e) => setFormData({ ...formData, policeReportNumber: e.target.value })}
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="witnesses">Witness Information</Label>
+                    <Label htmlFor="witnesses">{t('newClaim.incidentDetails.witnesses')}</Label>
                     <Textarea
                       id="witnesses"
-                      placeholder="Names and contact information of any witnesses"
+                      placeholder={t('newClaim.incidentDetails.witnessesPlaceholder')}
                       rows={3}
                       value={formData.witnesses}
                       onChange={(e) => setFormData({ ...formData, witnesses: e.target.value })}
@@ -389,7 +392,7 @@ export default function FileClaimPage() {
                   </div>
 
                   <Button type="button" onClick={handleNext} className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    Continue to Contact Information
+                    {t('newClaim.incidentDetails.continue')}
                   </Button>
                 </CardContent>
               </Card>
@@ -401,13 +404,13 @@ export default function FileClaimPage() {
                 <CardHeader className="border-b bg-gradient-to-r from-blue-50 to-slate-50">
                   <CardTitle className="text-2xl text-slate-900 flex items-center gap-2">
                     <User className="h-6 w-6 text-blue-600" />
-                    Contact Information
+                    {t('newClaim.contactInfo.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 pt-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name *</Label>
+                      <Label htmlFor="firstName">{t('newClaim.contactInfo.firstName')}</Label>
                       <Input
                         id="firstName"
                         placeholder="Enter your first name"
@@ -417,10 +420,10 @@ export default function FileClaimPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name *</Label>
+                      <Label htmlFor="lastName">{t('newClaim.contactInfo.lastName')}</Label>
                       <Input
                         id="lastName"
-                        placeholder="Enter your last name"
+                        placeholder={t('newClaim.contactInfo.lastName')}
                         value={formData.lastName}
                         onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                         required
@@ -429,11 +432,11 @@ export default function FileClaimPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email Address *</Label>
+                    <Label htmlFor="email">{t('newClaim.contactInfo.email')}</Label>
                     <Input
                       id="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder={t('newClaim.contactInfo.email')}
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
@@ -441,7 +444,7 @@ export default function FileClaimPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone Number *</Label>
+                    <Label htmlFor="phone">{t('newClaim.contactInfo.phone')}</Label>
                     <Input
                       id="phone"
                       type="tel"
@@ -453,7 +456,7 @@ export default function FileClaimPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="documents">Upload Supporting Documents</Label>
+                    <Label htmlFor="documents">{t('newClaim.contactInfo.documents')}</Label>
                     <div className="space-y-3">
                       <div className="border-2 border-dashed border-slate-300 rounded-lg p-8 text-center hover:border-blue-500 transition-colors">
                         <input
@@ -472,13 +475,13 @@ export default function FileClaimPage() {
                             <Upload className="h-12 w-12 text-slate-400 mx-auto mb-4" />
                           )}
                           <p className="text-slate-600 mb-2">
-                            {uploadingFiles ? "Uploading..." : "Click to upload or drag and drop"}
+                            {uploadingFiles ? t('newClaim.contactInfo.uploading') : t('newClaim.contactInfo.uploadPrompt')}
                           </p>
                           <p className="text-sm text-slate-500">
-                            JPG, PNG, or PDF (Max 10MB each, up to 5 files)
+                            {t('newClaim.contactInfo.uploadInfo')}
                           </p>
                           <p className="text-xs text-slate-400 mt-2">
-                            {uploadedFiles.length} of 5 files uploaded
+                            {uploadedFiles.length} {t('newClaim.contactInfo.uploadStatus')}
                           </p>
                         </label>
                       </div>
@@ -515,10 +518,10 @@ export default function FileClaimPage() {
 
                   <div className="flex gap-4">
                     <Button type="button" variant="outline" onClick={handleBack} className="flex-1 border-slate-300 hover:bg-slate-50">
-                      Back
+                      {t('newClaim.contactInfo.back')}
                     </Button>
                     <Button type="button" onClick={handleNext} className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
-                      Review Claim
+                      {t('newClaim.contactInfo.reviewClaim')}
                     </Button>
                   </div>
                 </CardContent>
@@ -531,30 +534,30 @@ export default function FileClaimPage() {
                 <CardHeader className="border-b bg-gradient-to-r from-blue-50 to-slate-50">
                   <CardTitle className="text-2xl text-slate-900 flex items-center gap-2">
                     <ClipboardCheck className="h-6 w-6 text-blue-600" />
-                    Review Your Claim
+                    {t('newClaim.review.title')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6 pt-6">
                   <div className="bg-slate-50 rounded-lg p-5 border border-slate-200">
                     <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                       <FileText className="h-5 w-5 text-blue-600" />
-                      Incident Details
+                      {t('newClaim.review.incidentDetails')}
                     </h3>
                     <div className="space-y-3">
                       <div className="flex justify-between py-2 border-b border-slate-200 last:border-0">
-                        <span className="text-slate-600 font-medium">Claim Type:</span>
-                        <span className="font-semibold text-slate-900">{formData.claimType || 'N/A'}</span>
+                        <span className="text-slate-600 font-medium">{t('newClaim.review.claimType')}</span>
+                        <span className="font-semibold text-slate-900">{formData.claimType ? t(`newClaim.claimTypes.${formData.claimType}`) : 'N/A'}</span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-slate-200 last:border-0">
-                        <span className="text-slate-600 font-medium">Policy Number:</span>
+                        <span className="text-slate-600 font-medium">{t('newClaim.review.policyNumber')}</span>
                         <span className="font-semibold text-slate-900">{formData.policyNumber || 'N/A'}</span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-slate-200 last:border-0">
-                        <span className="text-slate-600 font-medium">Date:</span>
+                        <span className="text-slate-600 font-medium">{t('newClaim.review.date')}</span>
                         <span className="font-semibold text-slate-900">{formData.incidentDate || 'N/A'}</span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-slate-200 last:border-0">
-                        <span className="text-slate-600 font-medium">Location:</span>
+                        <span className="text-slate-600 font-medium">{t('newClaim.review.location')}</span>
                         <span className="font-semibold text-slate-900">{formData.location || 'N/A'}</span>
                       </div>
                     </div>
@@ -563,29 +566,29 @@ export default function FileClaimPage() {
                   <div className="bg-slate-50 rounded-lg p-5 border border-slate-200">
                     <h3 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
                       <FileText className="h-5 w-5 text-blue-600" />
-                      Description
+                      {t('newClaim.review.description')}
                     </h3>
-                    <p className="text-sm text-slate-700 leading-relaxed">{formData.description || 'No description provided'}</p>
+                    <p className="text-sm text-slate-700 leading-relaxed">{formData.description || t('newClaim.review.noDescription')}</p>
                   </div>
 
                   <div className="bg-slate-50 rounded-lg p-5 border border-slate-200">
                     <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                       <User className="h-5 w-5 text-blue-600" />
-                      Contact Information
+                      {t('newClaim.review.contactInfo')}
                     </h3>
                     <div className="space-y-3">
                       <div className="flex justify-between py-2 border-b border-slate-200 last:border-0">
-                        <span className="text-slate-600 font-medium">Name:</span>
+                        <span className="text-slate-600 font-medium">{t('newClaim.review.name')}</span>
                         <span className="font-semibold text-slate-900">
                           {formData.firstName && formData.lastName ? `${formData.firstName} ${formData.lastName}` : 'N/A'}
                         </span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-slate-200 last:border-0">
-                        <span className="text-slate-600 font-medium">Email:</span>
+                        <span className="text-slate-600 font-medium">{t('newClaim.review.email')}</span>
                         <span className="font-semibold text-slate-900">{formData.email || 'N/A'}</span>
                       </div>
                       <div className="flex justify-between py-2 border-b border-slate-200 last:border-0">
-                        <span className="text-slate-600 font-medium">Phone:</span>
+                        <span className="text-slate-600 font-medium">{t('newClaim.review.phone')}</span>
                         <span className="font-semibold text-slate-900">{formData.phone || 'N/A'}</span>
                       </div>
                     </div>
@@ -596,7 +599,7 @@ export default function FileClaimPage() {
                     <div className="bg-slate-50 rounded-lg p-5 border border-slate-200">
                       <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                         <FileText className="h-5 w-5 text-blue-600" />
-                        Uploaded Documents ({uploadedFiles.length})
+                        {t('newClaim.review.uploadedDocuments')} ({uploadedFiles.length})
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {uploadedFiles.map((file, index) => (
@@ -649,8 +652,7 @@ export default function FileClaimPage() {
 
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                     <p className="text-sm text-slate-700">
-                      By submitting this claim, you confirm that all information provided is accurate and complete to
-                      the best of your knowledge.
+                      {t('newClaim.review.confirmation')}
                     </p>
                   </div>
 
@@ -662,7 +664,7 @@ export default function FileClaimPage() {
                       className="flex-1 border-slate-300 hover:bg-slate-50"
                       disabled={isSubmitting}
                     >
-                      Back
+                      {t('newClaim.review.back')}
                     </Button>
                     <Button 
                       type="submit" 
@@ -672,10 +674,10 @@ export default function FileClaimPage() {
                       {isSubmitting ? (
                         <>
                           <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                          Submitting...
+                          {t('newClaim.review.submitting')}
                         </>
                       ) : (
-                        'Submit Claim'
+                        t('newClaim.review.submit')
                       )}
                     </Button>
                   </div>
@@ -690,19 +692,18 @@ export default function FileClaimPage() {
                   <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle2 className="h-12 w-12 text-green-600" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 mb-4">Claim Submitted Successfully!</h2>
-                  <p className="text-lg text-slate-600 mb-2">Your claim number is:</p>
+                  <h2 className="text-2xl font-bold text-slate-900 mb-4">{t('newClaim.success.title')}</h2>
+                  <p className="text-lg text-slate-600 mb-2">{t('newClaim.success.claimNumber')}</p>
                   <p className="text-3xl font-bold text-blue-600 mb-6">{claimNumber}</p>
                   <p className="text-slate-600 mb-8">
-                    We've sent a confirmation email to {formData.email}. Our team will review your claim and contact you
-                    within 24-48 hours. Please keep your claim number for future reference.
+                    {t('newClaim.success.emailSent')} {formData.email}. {t('newClaim.success.reviewTime')}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link href="/claims/track">
-                      <Button variant="default">Track Your Claim</Button>
+                    <Link href={`/${locale}/claims`}>
+                      <Button variant="default">{t('newClaim.success.trackClaim')}</Button>
                     </Link>
-                    <Link href="/">
-                      <Button variant="outline">Return to Home</Button>
+                    <Link href={`/${locale}`}>
+                      <Button variant="outline">{t('newClaim.success.returnHome')}</Button>
                     </Link>
                   </div>
                 </CardContent>

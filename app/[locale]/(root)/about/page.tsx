@@ -306,7 +306,7 @@ export default function About() {
             {t('about.whistleblowing.description')}
           </p>
           <Link href={`/${locale}${createPageUrl("Whistleblowing")}`}>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+            <Button size="lg" variant="outline" className="border-white bg-white text-black hover:bg-gray-100 hover:text-gray-900">
               {t('about.whistleblowing.button')}
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
